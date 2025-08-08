@@ -1,0 +1,103 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+	"settings": {
+        "border": {
+			"color": true,
+			"radius": true,
+			"style": true,
+			"width": true
+		},
+		"dimensions": {
+			"minHeight": true
+		},
+		"position": {
+			"sticky": true
+		},
+		"spacing": {
+			"blockGap": true,
+			"margin": true,
+			"padding": true
+		},
+		"typography": {
+			"lineHeight": true
+		},
+        "layout": {
+			"contentSize": "800px",
+			"wideSize": "1170px"
+		},
+        "color": {
+            "defaultPalette": false,
+            "defaultDuotone": false,
+			"palette": [
+				{
+					"color": "#007CF5",
+					"name": "Primary",
+					"slug": "primary"
+				},
+                {
+					"color": "#FF9808",
+					"name": "Primary Orange",
+					"slug": "primary-orange"
+				},
+                {
+					"color": "#626368",
+					"name": "Gray 01",
+					"slug": "gray-01"
+				},
+                {
+					"color": "#8D8D8D",
+					"name": "Gray 02",
+					"slug": "gray-02"
+				},
+                {
+					"color": "#C6C6C6",
+					"name": "Gray 03",
+					"slug": "gray-03"
+				},
+                {
+					"color": "#12141D",
+					"name": "Black",
+					"slug": "black"
+				},
+                {
+					"color": "#ffffff",
+					"name": "White",
+					"slug": "white"
+				}
+            ]
+        }
+    },
+	"styles": {
+        "color": {
+            "text": "var(--wp--preset--color--black)",
+            "background": "var(--wp--preset--color--white)"
+        },
+        "elements": {
+            "caption": {
+                "color": {
+                    "text": "var(--wp--preset--color--gray-02)"
+                }
+            },
+            "button": {
+                "color": {
+                    "text": "var(--wp--preset--color--white)",
+                    "background": "var(--wp--preset--color--primary)"
+                }
+            },
+            "heading": {
+                "color": {
+                    "text": "var(--wp--preset--color--black)"
+                }
+            },
+            "h1": {
+                "color": {
+                    "text": "var(--wp--preset--color--black)"
+                }
+            }
+        }
+    },
+	"customTemplates": {},
+	"templateParts": {},
+	"patterns": []
+}
