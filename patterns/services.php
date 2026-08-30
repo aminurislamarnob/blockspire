@@ -92,8 +92,8 @@ $blockspire_services = array(
 <!-- /wp:columns -->
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
-<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"main-bg","textColor":"heading-color","style":{"border":{"color":"var:preset|color|gray-03","width":"1px"},"elements":{"link":{"color":{"text":"var:preset|color|heading-color"}}}},"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-heading-color-color has-main-bg-background-color has-text-color has-background has-border-color wp-element-button" style="border-color:var(--wp--preset--color--gray-03);border-width:1px" href="#"><?php echo esc_html__( 'View All', 'blockspire' ); ?></a></div>
+<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"main-bg","textColor":"heading-color","style":{"border":{"color":"var:preset|color|gray-02","width":"1px"},"elements":{"link":{"color":{"text":"var:preset|color|heading-color"}}}},"className":"is-style-outline"} -->
+<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-heading-color-color has-main-bg-background-color has-text-color has-background has-border-color wp-element-button" style="border-color:var(--wp--preset--color--gray-02);border-width:1px" href="#"><?php echo esc_html__( 'View All', 'blockspire' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group -->

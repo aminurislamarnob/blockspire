@@ -12,8 +12,9 @@
     "lint:php": "composer run lint",
     "fix:php": "composer run fix",
     "lint:json": "node tools/validate-json.mjs",
-    "check": "npm run lint:json && npm run lint:php",
-    "zip": "bash tools/build-zip.sh"
+    "check": "npm run lint:json && npm run contrast && npm run lint:php",
+    "zip": "bash tools/build-zip.sh",
+    "contrast": "node tools/contrast.mjs"
   },
   "devDependencies": {
     "sharp": "^0.35.4",

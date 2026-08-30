@@ -1,0 +1,58 @@
+=== Blockspire ===
+
+Contributors: aminurislam01
+Requires at least: 6.7
+Tested up to: 7.1
+Requires PHP: 7.4
+Stable tag: 1.0.0
+License: GNU General Public License v2.0 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Tags: blog, e-commerce, portfolio, accessibility-ready, block-patterns, block-styles, style-variations, full-site-editing, template-editing, translation-ready, rtl-language-support, custom-colors, custom-logo, custom-menu, editor-style, featured-images, full-width-template, sticky-post, threaded-comments, wide-blocks, grid-layout, one-column, two-columns, left-sidebar, right-sidebar
+
+A fast, accessible, multipurpose block theme for businesses, agencies, blogs, portfolios and online stores.
+
+== Description ==
+
+Blockspire is built entirely for full site editing. It ships a complete template hierarchy, a large pattern library, several style variations and themed WooCommerce templates, so you can assemble a polished site in the Site Editor without writing code.
+
+Fonts are self-hosted and the theme makes no external requests, so nothing about your visitors leaves your server. There is no page builder dependency and no settings page to learn: everything is edited where WordPress already puts it, in the Site Editor.
+
+== Installation ==
+
+1. In your WordPress dashboard, go to Appearance > Themes and click Add New.
+2. Click Upload Theme, choose the theme zip, and click Install Now.
+3. Click Activate.
+4. Go to Appearance > Editor to edit templates, or Appearance > Editor > Styles to pick a style variation.
+
+== Frequently Asked Questions ==
+
+= Does Blockspire require any plugins? =
+
+No. WooCommerce is supported if you want to sell, but nothing is required.
+
+= How do I change the colours and fonts? =
+
+Go to Appearance > Editor > Styles. Pick a style variation, or open the styles panel to adjust colours and typography yourself.
+
+== Copyright ==
+
+Blockspire WordPress theme, Copyright 2026 Aminur Islam Arnob
+Blockspire is distributed under the terms of the GNU GPL v2 or later.
+
+This theme bundles the following third-party resources:
+
+Poppins font
+Copyright 2014-2020 Indian Type Foundry, Jonny Pinhorn
+License: SIL Open Font License, 1.1
+License URI: https://scripts.sil.org/OFL
+Source: https://fonts.google.com/specimen/Poppins
+
+Service icons (assets/images/icon-*.svg)
+Copyright 2026 Aminur Islam Arnob
+License: GNU General Public License v2.0 or later
+Original work created for this theme.
+
+== Changelog ==
+
+= 1.0.0 =
+* Initial release.

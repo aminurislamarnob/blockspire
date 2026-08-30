@@ -1,0 +1,106 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Midnight",
+	"description": "A dark variation built on the deep navy from the palette, with light body text and the orange accent used where it finally has enough contrast.",
+	"settings": {
+		"color": {
+			"palette": [
+				{
+					"name": "Primary",
+					"slug": "primary",
+					"color": "#5C82F2"
+				},
+				{
+					"name": "Accent",
+					"slug": "accent",
+					"color": "#FF9808"
+				},
+				{
+					"name": "Secondary",
+					"slug": "secondary",
+					"color": "#FFFFFF"
+				},
+				{
+					"name": "Main BG",
+					"slug": "main-bg",
+					"color": "#111B3A"
+				},
+				{
+					"name": "Light BG",
+					"slug": "light-bg",
+					"color": "#1B2750"
+				},
+				{
+					"name": "Dark BG",
+					"slug": "dark-bg",
+					"color": "#0A1128"
+				},
+				{
+					"name": "Heading Color",
+					"slug": "heading-color",
+					"color": "#FFFFFF"
+				},
+				{
+					"name": "Text White",
+					"slug": "text-white",
+					"color": "#FFFFFF"
+				},
+				{
+					"name": "Text Color",
+					"slug": "text-color",
+					"color": "#C6CBDA"
+				},
+				{
+					"name": "Gray 02",
+					"slug": "gray-02",
+					"color": "#8D93A8"
+				},
+				{
+					"name": "Gray 03",
+					"slug": "gray-03",
+					"color": "#39456B"
+				},
+				{
+					"name": "Link Color",
+					"slug": "link-color",
+					"color": "#FFFFFF"
+				}
+			]
+		}
+	},
+	"styles": {
+		"elements": {
+			"button": {
+				"color": {
+					"text": "var(--wp--preset--color--main-bg)",
+					"background": "var(--wp--preset--color--primary)"
+				},
+				":hover": {
+					"color": {
+						"text": "var(--wp--preset--color--main-bg)",
+						"background": "var(--wp--preset--color--accent)"
+					}
+				},
+				":focus": {
+					"color": {
+						"text": "var(--wp--preset--color--main-bg)",
+						"background": "var(--wp--preset--color--accent)"
+					}
+				}
+			},
+			"link": {
+				":hover": {
+					"color": {
+						"text": "var(--wp--preset--color--accent)"
+					}
+				},
+				":focus": {
+					"color": {
+						"text": "var(--wp--preset--color--accent)"
+					}
+				}
+			}
+		}
+	}
+}
