@@ -65,6 +65,11 @@
 					"slug": "30"
 				},
 				{
+					"name": "32px",
+					"size": "32px",
+					"slug": "32"
+				},
+				{
 					"name": "40px",
 					"size": "40px",
 					"slug": "40"
@@ -139,7 +144,7 @@
 				{
 					"name": "Dark BG",
 					"slug": "dark-bg",
-					"color": "#111B3A"
+					"color": "#111111"
 				},
 				{
 					"name": "Heading Color",
@@ -522,7 +527,8 @@
 				},
 				"color": {
 					"text": "var(--wp--preset--color--link-color)"
-				}
+				},
+				"css": "& .current-menu-item > .wp-block-navigation-item__content{text-decoration:underline;text-underline-offset:0.2em}"
 			}
 		}
 	},

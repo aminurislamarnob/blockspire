@@ -37,7 +37,8 @@ Presets are referenced in CSS as `var(--wp--preset--<type>--<slug>)`.
 | `text-color` | `#626368` | Grayscale / Gray 01 |
 | `gray-02` | `#8D8D8D` | Grayscale / Gray 02 |
 | `gray-03` | `#C6C6C6` | Grayscale / Gray 03 |
-| `secondary`, `dark-bg`, `heading-color`, `link-color` | `#111B3A` | Text Color / Black |
+| `secondary`, `heading-color`, `link-color` | `#111B3A` | Text Color / Black |
+| `dark-bg` | `#111111` | Background / Black (footer surface) |
 | `main-bg`, `text-white` | `#FFFFFF` | Text Color / White |
 | `light-bg` | `#F4F4F4` | (not in Figma spec) |
 
@@ -45,9 +46,15 @@ Presets are referenced in CSS as `var(--wp--preset--<type>--<slug>)`.
 
 **Contrast (run `node tools/contrast.mjs`):** `primary` passes AA on white at 5.78:1. `accent` is **2.15:1 on white and fails even for large text** — only use it on dark surfaces (7.85:1 on `#111B3A`) or as a non-text decorative fill. `gray-02` is large-text/border only (3.32:1); `gray-03` is borders and dividers only (1.71:1).
 
-**Font sizes:** `display`, `small|medium|large-paragraph`, `small|medium|large-title`, `heading-01`…`heading-06`, `button-large`, `button-small`. **Font family:** `poppins`. **Spacing:** numeric slugs matching the px value (`10`, `12`, `16`, `20`, `24`, `30`, `40`, `48`, `50`, `60`, `70`, `80`, `100`), plus `fluid-inset` (`clamp(24px, 8.5vw, 100px)`) for section side padding that must shrink on phones. Use `fluid-inset` wherever the design shows 100px horizontal padding on a band or section. The style engine only resolves `var:preset|…` shorthand, never `var:custom|…`, so anything a block needs to reference from its attributes has to be a preset.
+**Font sizes:** `display`, `small|medium|large-paragraph`, `small|medium|large-title`, `heading-01`…`heading-06`, `button-large`, `button-small`. **Font family:** `poppins`. **Spacing:** numeric slugs matching the px value (`10`, `12`, `16`, `20`, `24`, `30`, `32`, `40`, `48`, `50`, `60`, `70`, `80`, `100`), plus `fluid-inset` (`clamp(24px, 8.5vw, 100px)`) for section side padding that must shrink on phones. Use `fluid-inset` wherever the design shows 100px horizontal padding on a band or section. The style engine only resolves `var:preset|…` shorthand, never `var:custom|…`, so anything a block needs to reference from its attributes has to be a preset.
 
-**Decorative backgrounds** (`assets/images/band-decoration.svg`) are drawn in **white at low opacity**, never in a fixed hue, so they lighten whatever colour sits behind them and stay correct in every style variation. Apply them with the Group block's `style.background.backgroundImage` (core support, `cover` by default), not with custom CSS.
+**Decorative backgrounds** (`assets/images/band-decoration.svg`) are drawn in **white at low opacity**, never in a fixed hue, so they lighten whatever colour sits behind them and stay correct in every style variation. Apply them with the Group block's `style.background.backgroundImage` (core support, `cover` by default), not with custom CSS. `band-decoration.svg` carries the CTA band's exact Figma geometry (18px dot grid, the two angled shapes); `dot-grid.svg` is an 18px tile for repeating surfaces such as the footer (`backgroundSize: "18px"`, `backgroundRepeat: "repeat"`).
+
+**Icons that must follow the text colour** (arrows on buttons and links) are block styles with a `css` key (`styles/blocks/button-arrow.json`, `paragraph-arrow-link.json`) that draw a `::after` box filled with `currentColor` through a data-URI `mask`. An `<img>` icon cannot inherit colour, so it would break in dark variations; a masked pseudo-element cannot. Gotchas in core's `css` processing (`WP_Theme_JSON::process_blocks_custom_css`): it splits on `&`, so a prefix like `[dir="rtl"] &` is **not** supported — use `:dir(rtl)` instead; and the button's variation selector already ends in `.wp-block-button__link`, so write `&::after`, never `& .wp-block-button__link::after`. Core also renders each variation instance with a unique `is-style-<slug>--N` class, so the rule is duplicated per block on the page.
+
+**Template parts cannot run PHP**, so a part that needs `get_theme_file_uri()` (footer background, icons) is a one-line `wp:pattern` reference to a PHP pattern (`parts/footer.html` → `patterns/footer.php`, registered with `Block Types: core/template-part/footer`).
+
+**Root block gap:** `styles.spacing.blockGap` (20px) also separates the header part, `<main>` and footer part when they sit at the template root. Page templates that need edge-to-edge sections wrap everything in one `alignfull` constrained Group with `blockGap: 0` (see `templates/front-page.html`) and let each section own its vertical padding. The wrapper **must** be `align: full`, otherwise it is constrained to `contentSize` and every full-width child collapses to 800px.
 
 **Line heights** live in `settings.custom.lineHeight` as `var(--wp--custom--line-height--<slug>)` — `display`, `heading-01`…`heading-06`, `title-large|medium|small`, `paragraph-large|medium|small`, `button-large|small`. Letter spacing: `settings.custom.letterSpacing.tight` (-0.03em). A `fontSizes` preset **only ever emits `font-size`**; putting `lineHeight` or `fontWeight` in one does nothing (core's `PRESETS_METADATA` declares `'properties' => array( 'font-size' )`). That is why line heights are custom tokens rather than preset properties.
 

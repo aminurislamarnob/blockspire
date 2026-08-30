@@ -1,0 +1,45 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Chip",
+	"slug": "chip",
+	"blockTypes": [ "core/button" ],
+	"styles": {
+		"color": {
+			"background": "transparent",
+			"text": "inherit"
+		},
+		"border": {
+			"color": "currentColor",
+			"style": "solid",
+			"width": "1px",
+			"radius": "0"
+		},
+		"spacing": {
+			"padding": {
+				"top": "16px",
+				"right": "32px",
+				"bottom": "16px",
+				"left": "32px"
+			}
+		},
+		"typography": {
+			"fontSize": "var(--wp--preset--font-size--small-paragraph)",
+			"fontWeight": "400",
+			"lineHeight": "var(--wp--custom--line-height--paragraph-small)"
+		},
+		":hover": {
+			"color": {
+				"background": "transparent",
+				"text": "var(--wp--preset--color--primary)"
+			}
+		},
+		":focus": {
+			"color": {
+				"background": "transparent",
+				"text": "var(--wp--preset--color--primary)"
+			}
+		},
+		"css": "&{border-color:color-mix(in srgb, currentColor 20%, transparent)}\n&::after{content:\"\";display:inline-block;inline-size:1.5em;block-size:1.5em;margin-inline-start:0.5em;vertical-align:middle;background-color:currentColor;-webkit-mask:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z'/%3E%3C/svg%3E\") center/contain no-repeat;mask:url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M6 6v2h8.59L5 17.59 6.41 19 16 9.41V18h2V6z'/%3E%3C/svg%3E\") center/contain no-repeat}\n&:dir(rtl)::after{transform:scaleX(-1)}"
+	}
+}

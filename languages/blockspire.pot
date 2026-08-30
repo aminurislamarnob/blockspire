@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-08-30T18:15:38+00:00\n"
+"POT-Creation-Date: 2026-08-30T18:46:27+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: blockspire\n"
@@ -94,11 +94,85 @@ msgid "A wide coloured band with a display heading, a call to action button and 
 msgstr ""
 
 #: patterns/cta.php:19
-msgid "Got a project? Let&#8217;s talk."
+msgid "Got A Project? Let&#8217;s Talk."
 msgstr ""
 
 #: patterns/cta.php:25
 msgid "Start a Project"
+msgstr ""
+
+#: patterns/footer.php
+msgctxt "Pattern title"
+msgid "Footer with contact chips and menus"
+msgstr ""
+
+#: patterns/footer.php
+msgctxt "Pattern description"
+msgid "A dark footer with the site logo and social links, a large invitation heading with contact chips, two link columns and the site credit."
+msgstr ""
+
+#: patterns/footer.php:25
+msgid "FB"
+msgstr ""
+
+#: patterns/footer.php:27
+msgid "TW"
+msgstr ""
+
+#: patterns/footer.php:29
+msgid "LI"
+msgstr ""
+
+#: patterns/footer.php:31
+msgid "IN"
+msgstr ""
+
+#: patterns/footer.php:39
+msgid "Let&#8217;s work together"
+msgstr ""
+
+#: patterns/footer.php:57
+msgid "About"
+msgstr ""
+
+#: patterns/footer.php:59
+#: patterns/services.php:51
+msgid "Services"
+msgstr ""
+
+#: patterns/footer.php:61
+msgid "Blog"
+msgstr ""
+
+#: patterns/footer.php:63
+msgid "Contact"
+msgstr ""
+
+#: patterns/footer.php:69
+msgid "Portfolio"
+msgstr ""
+
+#: patterns/footer.php:71
+msgid "Team members"
+msgstr ""
+
+#: patterns/footer.php:73
+msgid "Pricing"
+msgstr ""
+
+#: patterns/footer.php:75
+msgid "Help"
+msgstr ""
+
+#. translators: %s: WordPress.
+#: patterns/footer.php:86
+#, php-format
+msgid "Proudly powered by %s"
+msgstr ""
+
+#. translators: %s: WordPress.
+#: patterns/footer.php:86
+msgid "https://wordpress.org/"
 msgstr ""
 
 #: patterns/hero.php
@@ -115,15 +189,15 @@ msgstr ""
 msgid "Creating Software &amp; Digital Excellence"
 msgstr ""
 
-#: patterns/hero.php:24
+#: patterns/hero.php:25
 msgid "We transform businesses of most major sectors with powerful and adaptable digital solutions."
 msgstr ""
 
-#: patterns/hero.php:30
+#: patterns/hero.php:32
 msgid "Let&#8217;s Talk With Us"
 msgstr ""
 
-#: patterns/hero.php:37
+#: patterns/hero.php:39
 msgid "A tidy desk with a monitor, keyboard and mouse beside a window"
 msgstr ""
 
@@ -185,10 +259,6 @@ msgstr ""
 msgid "Keep your site quick, resilient and protected as your traffic and content grow."
 msgstr ""
 
-#: patterns/services.php:51
-msgid "Services"
-msgstr ""
-
 #: patterns/services.php:55
 msgid "Top notch digital services"
 msgstr ""
@@ -229,6 +299,11 @@ msgstr ""
 #: theme.json
 msgctxt "Space size name"
 msgid "30px"
+msgstr ""
+
+#: theme.json
+msgctxt "Space size name"
+msgid "32px"
 msgstr ""
 
 #: theme.json
@@ -433,14 +508,39 @@ msgctxt "Template part name"
 msgid "Footer"
 msgstr ""
 
+#: styles/blocks/button-arrow.json
+msgctxt "Style variation name"
+msgid "Arrow"
+msgstr ""
+
+#: styles/blocks/button-chip.json
+msgctxt "Style variation name"
+msgid "Chip"
+msgstr ""
+
+#: styles/blocks/button-outline-arrow.json
+msgctxt "Style variation name"
+msgid "Outline arrow"
+msgstr ""
+
 #: styles/blocks/button-rounded.json
 msgctxt "Style variation name"
 msgid "Rounded"
 msgstr ""
 
+#: styles/blocks/navigation-bulleted.json
+msgctxt "Style variation name"
+msgid "Bulleted"
+msgstr ""
+
 #: styles/blocks/navigation-link-hover-primary.json
 msgctxt "Style variation name"
 msgid "Hover Primary"
+msgstr ""
+
+#: styles/blocks/paragraph-arrow-link.json
+msgctxt "Style variation name"
+msgid "Arrow link"
 msgstr ""
 
 #: styles/midnight.json

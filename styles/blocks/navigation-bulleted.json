@@ -1,0 +1,10 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Bulleted",
+	"slug": "bulleted",
+	"blockTypes": [ "core/navigation" ],
+	"styles": {
+		"css": "& .wp-block-navigation-item::before{content:\"\\2022\";margin-inline-end:0.5em}"
+	}
+}

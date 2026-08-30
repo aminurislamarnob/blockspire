@@ -45,8 +45,8 @@ $blockspire_services = array(
 );
 
 ?>
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|100","bottom":"var:preset|spacing|100"},"blockGap":"var:preset|spacing|40"}},"layout":{"type":"constrained","contentSize":"1170px"}} -->
-<div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--100);padding-bottom:var(--wp--preset--spacing--100)"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|24"}},"layout":{"type":"constrained","contentSize":"670px"}} -->
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|100"},"blockGap":"var:preset|spacing|40"}},"layout":{"type":"constrained","contentSize":"1170px"}} -->
+<div class="wp-block-group alignfull" style="padding-top:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--100)"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|24"}},"layout":{"type":"constrained","contentSize":"670px"}} -->
 <div class="wp-block-group"><!-- wp:paragraph {"align":"center","style":{"typography":{"fontWeight":"700","lineHeight":"var:custom|line-height|title-medium"}},"textColor":"gray-02","fontSize":"medium-title"} -->
 <p class="has-text-align-center has-gray-02-color has-text-color has-medium-title-font-size" style="font-weight:700;line-height:var(--wp--custom--line-height--title-medium)"><?php echo esc_html__( 'Services', 'blockspire' ); ?></p>
 <!-- /wp:paragraph -->
@@ -86,8 +86,8 @@ $blockspire_services = array(
 <p class="has-text-color-color has-text-color has-small-paragraph-font-size" style="font-weight:400;line-height:var(--wp--custom--line-height--paragraph-small)"><?php echo esc_html( $blockspire_service['text'] ); ?></p>
 <!-- /wp:paragraph -->
 
-<!-- wp:paragraph {"style":{"typography":{"fontWeight":"400","lineHeight":"var:custom|line-height|paragraph-medium"},"elements":{"link":{"color":{"text":"var:preset|color|heading-color"}}}},"fontSize":"medium-paragraph"} -->
-<p class="has-link-color has-medium-paragraph-font-size" style="font-weight:400;line-height:var(--wp--custom--line-height--paragraph-medium)"><a href="#"><?php echo esc_html__( 'Learn More', 'blockspire' ); ?></a></p>
+<!-- wp:paragraph {"className":"is-style-arrow-link","style":{"typography":{"fontWeight":"400","lineHeight":"1.5"},"elements":{"link":{"color":{"text":"var:preset|color|heading-color"}}}},"fontSize":"medium-paragraph"} -->
+<p class="is-style-arrow-link has-link-color has-medium-paragraph-font-size" style="font-weight:400;line-height:1.5"><a href="#"><?php echo esc_html__( 'Learn More', 'blockspire' ); ?></a></p>
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->
@@ -96,8 +96,8 @@ $blockspire_services = array(
 <!-- /wp:columns -->
 
 <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
-<div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"main-bg","textColor":"heading-color","style":{"border":{"color":"var:preset|color|gray-02","width":"1px","radius":"8px"},"spacing":{"padding":{"top":"var:preset|spacing|16","right":"var:preset|spacing|24","bottom":"var:preset|spacing|16","left":"var:preset|spacing|30"}},"elements":{"link":{"color":{"text":"var:preset|color|heading-color"}}}},"className":"is-style-outline"} -->
-<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-heading-color-color has-main-bg-background-color has-text-color has-background has-border-color wp-element-button" style="border-color:var(--wp--preset--color--gray-02);border-width:1px;border-radius:8px;padding-top:var(--wp--preset--spacing--16);padding-right:var(--wp--preset--spacing--24);padding-bottom:var(--wp--preset--spacing--16);padding-left:var(--wp--preset--spacing--30)" href="#"><?php echo esc_html__( 'View All', 'blockspire' ); ?></a></div>
+<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-outline-arrow"} -->
+<div class="wp-block-button is-style-outline-arrow"><a class="wp-block-button__link wp-element-button" href="#"><?php echo esc_html__( 'View All', 'blockspire' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group -->
