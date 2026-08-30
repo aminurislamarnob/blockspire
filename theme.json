@@ -40,14 +40,39 @@
 					"slug": "10"
 				},
 				{
+					"name": "12px",
+					"size": "12px",
+					"slug": "12"
+				},
+				{
+					"name": "16px",
+					"size": "16px",
+					"slug": "16"
+				},
+				{
 					"name": "20px",
 					"size": "20px",
 					"slug": "20"
 				},
 				{
+					"name": "24px",
+					"size": "24px",
+					"slug": "24"
+				},
+				{
 					"name": "30px",
 					"size": "30px",
 					"slug": "30"
+				},
+				{
+					"name": "40px",
+					"size": "40px",
+					"slug": "40"
+				},
+				{
+					"name": "48px",
+					"size": "48px",
+					"slug": "48"
 				},
 				{
 					"name": "50px",
@@ -63,6 +88,11 @@
 					"name": "70px",
 					"size": "70px",
 					"slug": "70"
+				},
+				{
+					"name": "80px",
+					"size": "80px",
+					"slug": "80"
 				},
 				{
 					"name": "100px",
@@ -313,6 +343,9 @@
 				"medium": "500",
 				"semibold": "600",
 				"bold": "700"
+			},
+			"letterSpacing": {
+				"tight": "-0.03em"
 			}
 		}
 	},
@@ -400,7 +433,7 @@
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--poppins)",
 					"fontSize": "var(--wp--preset--font-size--button-large)",
-					"fontWeight": "700",
+					"fontWeight": "600",
 					"lineHeight": "var(--wp--custom--line-height--button-large)"
 				}
 			},

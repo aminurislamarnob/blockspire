@@ -52,11 +52,11 @@ Copyright 2026 Aminur Islam Arnob
 License: GNU General Public License v2.0 or later
 Original work created for this theme.
 
-Bundled image (assets/images/hero-team.webp)
-Photograph by Christina Morillo
+Bundled image (assets/images/hero-workspace.webp)
+Photograph by Design by Matt
 License: CC0 1.0 Universal (Public Domain Dedication)
 License URI: https://creativecommons.org/publicdomain/zero/1.0/
-Source: https://stocksnap.io/photo/conferenceroom-meeting-GVUWVKUHZE
+Source: https://stocksnap.io/photo/home-office-QUU0AQABSN
 Found via Openverse. Resized and converted to WebP for this theme.
 
 == Changelog ==

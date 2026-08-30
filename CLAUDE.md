@@ -49,6 +49,25 @@ Presets are referenced in CSS as `var(--wp--preset--<type>--<slug>)`.
 
 **Line heights** live in `settings.custom.lineHeight` as `var(--wp--custom--line-height--<slug>)` — `heading-01`…`heading-06`, `title-large|medium|small`, `paragraph-large|medium|small`, `button-large|small`. A `fontSizes` preset **only ever emits `font-size`**; putting `lineHeight` or `fontWeight` in one does nothing (core's `PRESETS_METADATA` declares `'properties' => array( 'font-size' )`). That is why line heights are custom tokens rather than preset properties.
 
+> **Whenever you override a heading's font size, set the matching line height too.** `styles.elements.h1`–`h6` bind a size *and* its line height together. Change only the size on a block — say an `h2` set to `heading-03` — and it keeps the `h2` element's `heading-02` leading, silently pairing a size with the wrong line height. This produced a 63.36px line height where the design called for 64px.
+
+### Type styles from the design
+
+Values below are the component styles bound in the Figma page designs, which are authoritative. The standalone Typography spec frame disagrees in places and is **not** reliable — it lists Button/Large as Bold when every real usage binds SemiBold 600, the same way the Color Palette frame's hex labels disagree with its actual fills.
+
+| Style | Size / line height | Weight | Used for |
+|---|---|---|---|
+| Heading H1 | 94 / 100 | 700 | hero display heading |
+| Heading H3 | 60 / 64 | 700 | section titles |
+| Title Large | 24 / 30 | 700 | card titles |
+| Title Medium | 20 / 26 | 700 | section eyebrows, footer headings |
+| Title Small | 16 / 26 | **500** | form labels and placeholders |
+| Paragraph Large | 18 / 28 | 400 | hero supporting text |
+| Paragraph Medium | 16 / 28 | 400 | body, inline links such as "Learn More" |
+| Paragraph Small | 14 / 22 | 400 | card body |
+| Button Large | 16 / 20 | **600** | buttons and navigation links |
+| Button Small | 14 / 20 | 700 | the rounded header button |
+
 ## Conventions
 
 - Text domain `blockspire`; `Domain Path: /languages`. Wrap user-facing strings in translation functions and regenerate with `npm run pot`.
