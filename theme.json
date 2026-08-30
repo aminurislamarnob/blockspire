@@ -25,15 +25,50 @@
 			"margin": true,
 			"padding": true,
 			"defaultSpacingSizes": false,
-			"units": [ "px", "em", "rem", "vh", "vw", "%" ],
+			"units": [
+				"px",
+				"em",
+				"rem",
+				"vh",
+				"vw",
+				"%"
+			],
 			"spacingSizes": [
-				{ "name": "10px", "size": "10px", "slug": "10" },
-				{ "name": "20px", "size": "20px", "slug": "20" },
-				{ "name": "30px", "size": "30px", "slug": "30" },
-				{ "name": "50px", "size": "50px", "slug": "50" },
-				{ "name": "60px", "size": "60px", "slug": "60" },
-				{ "name": "70px", "size": "70px", "slug": "70" },
-				{ "name": "100px", "size": "100px", "slug": "100" }
+				{
+					"name": "10px",
+					"size": "10px",
+					"slug": "10"
+				},
+				{
+					"name": "20px",
+					"size": "20px",
+					"slug": "20"
+				},
+				{
+					"name": "30px",
+					"size": "30px",
+					"slug": "30"
+				},
+				{
+					"name": "50px",
+					"size": "50px",
+					"slug": "50"
+				},
+				{
+					"name": "60px",
+					"size": "60px",
+					"slug": "60"
+				},
+				{
+					"name": "70px",
+					"size": "70px",
+					"slug": "70"
+				},
+				{
+					"name": "100px",
+					"size": "100px",
+					"slug": "100"
+				}
 			]
 		},
 		"color": {
@@ -124,44 +159,136 @@
 							"fontFamily": "Poppins",
 							"fontWeight": "400",
 							"fontStyle": "normal",
-							"src": [ "file:./assets/fonts/Poppins-Regular.woff2" ]
+							"src": [
+								"file:./assets/fonts/Poppins-Regular.woff2"
+							]
 						},
 						{
 							"fontFamily": "Poppins",
 							"fontWeight": "500",
 							"fontStyle": "normal",
-							"src": [ "file:./assets/fonts/Poppins-Medium.woff2" ]
+							"src": [
+								"file:./assets/fonts/Poppins-Medium.woff2"
+							]
 						},
 						{
 							"fontFamily": "Poppins",
 							"fontWeight": "600",
 							"fontStyle": "normal",
-							"src": [ "file:./assets/fonts/Poppins-SemiBold.woff2" ]
+							"src": [
+								"file:./assets/fonts/Poppins-SemiBold.woff2"
+							]
 						},
 						{
 							"fontFamily": "Poppins",
 							"fontWeight": "700",
 							"fontStyle": "normal",
-							"src": [ "file:./assets/fonts/Poppins-Bold.woff2" ]
+							"src": [
+								"file:./assets/fonts/Poppins-Bold.woff2"
+							]
 						}
 					]
 				}
 			],
 			"fontSizes": [
-				{ "name": "Small Paragraph", "slug": "small-paragraph", "size": "14px" },
-				{ "name": "Medium Paragraph", "slug": "medium-paragraph", "size": "16px" },
-				{ "name": "Large Paragraph", "slug": "large-paragraph", "size": "18px" },
-				{ "name": "Small Title", "slug": "small-title", "size": "16px" },
-				{ "name": "Medium Title", "slug": "medium-title", "size": "20px" },
-				{ "name": "Large Title", "slug": "large-title", "size": "24px", "fluid": { "min": "20px", "max": "24px" } },
-				{ "name": "Heading 01", "slug": "heading-01", "size": "94px", "fluid": { "min": "40px", "max": "94px" } },
-				{ "name": "Heading 02", "slug": "heading-02", "size": "72px", "fluid": { "min": "36px", "max": "72px" } },
-				{ "name": "Heading 03", "slug": "heading-03", "size": "60px", "fluid": { "min": "32px", "max": "60px" } },
-				{ "name": "Heading 04", "slug": "heading-04", "size": "48px", "fluid": { "min": "28px", "max": "48px" } },
-				{ "name": "Heading 05", "slug": "heading-05", "size": "36px", "fluid": { "min": "26px", "max": "36px" } },
-				{ "name": "Heading 06", "slug": "heading-06", "size": "30px", "fluid": { "min": "24px", "max": "30px" } },
-				{ "name": "Button Large", "slug": "button-large", "size": "16px" },
-				{ "name": "Button Small", "slug": "button-small", "size": "14px" }
+				{
+					"name": "Small Paragraph",
+					"slug": "small-paragraph",
+					"size": "14px"
+				},
+				{
+					"name": "Medium Paragraph",
+					"slug": "medium-paragraph",
+					"size": "16px"
+				},
+				{
+					"name": "Large Paragraph",
+					"slug": "large-paragraph",
+					"size": "18px"
+				},
+				{
+					"name": "Small Title",
+					"slug": "small-title",
+					"size": "16px"
+				},
+				{
+					"name": "Medium Title",
+					"slug": "medium-title",
+					"size": "20px"
+				},
+				{
+					"name": "Large Title",
+					"slug": "large-title",
+					"size": "24px",
+					"fluid": {
+						"min": "20px",
+						"max": "24px"
+					}
+				},
+				{
+					"name": "Heading 01",
+					"slug": "heading-01",
+					"size": "94px",
+					"fluid": {
+						"min": "40px",
+						"max": "94px"
+					}
+				},
+				{
+					"name": "Heading 02",
+					"slug": "heading-02",
+					"size": "72px",
+					"fluid": {
+						"min": "36px",
+						"max": "72px"
+					}
+				},
+				{
+					"name": "Heading 03",
+					"slug": "heading-03",
+					"size": "60px",
+					"fluid": {
+						"min": "32px",
+						"max": "60px"
+					}
+				},
+				{
+					"name": "Heading 04",
+					"slug": "heading-04",
+					"size": "48px",
+					"fluid": {
+						"min": "28px",
+						"max": "48px"
+					}
+				},
+				{
+					"name": "Heading 05",
+					"slug": "heading-05",
+					"size": "36px",
+					"fluid": {
+						"min": "26px",
+						"max": "36px"
+					}
+				},
+				{
+					"name": "Heading 06",
+					"slug": "heading-06",
+					"size": "30px",
+					"fluid": {
+						"min": "24px",
+						"max": "30px"
+					}
+				},
+				{
+					"name": "Button Large",
+					"slug": "button-large",
+					"size": "16px"
+				},
+				{
+					"name": "Button Small",
+					"slug": "button-small",
+					"size": "14px"
+				}
 			]
 		},
 		"custom": {
@@ -222,6 +349,12 @@
 				":focus": {
 					"color": {
 						"text": "var(--wp--preset--color--primary)"
+					},
+					"outline": {
+						"color": "currentColor",
+						"style": "solid",
+						"width": "2px",
+						"offset": "2px"
 					}
 				},
 				":active": {
@@ -245,6 +378,12 @@
 					"color": {
 						"text": "var(--wp--preset--color--text-white)",
 						"background": "var(--wp--preset--color--dark-bg)"
+					},
+					"outline": {
+						"color": "currentColor",
+						"style": "solid",
+						"width": "2px",
+						"offset": "-4px"
 					}
 				},
 				"border": {
