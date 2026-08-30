@@ -1,0 +1,22 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Hover Primary",
+	"slug": "hover-primary",
+	"blockTypes": [ "core/navigation-link" ],
+	"styles": {
+		"color": {
+			"text": "var(--wp--preset--color--link-color)"
+		},
+		":hover": {
+			"color": {
+				"text": "var(--wp--preset--color--primary)"
+			}
+		},
+		":focus": {
+			"color": {
+				"text": "var(--wp--preset--color--primary)"
+			}
+		}
+	}
+}

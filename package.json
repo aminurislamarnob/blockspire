@@ -1,0 +1,22 @@
+{
+  "name": "blockspire",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Development tooling for the Blockspire WordPress block theme. Nothing here is shipped in the theme zip.",
+  "license": "GPL-2.0-or-later",
+  "author": "Aminur Islam Arnob",
+  "scripts": {
+    "fonts": "node tools/convert-fonts.mjs",
+    "images": "node tools/convert-images.mjs",
+    "pot": "wp i18n make-pot . languages/blockspire.pot --domain=blockspire --exclude=node_modules,vendor,tools,build,assets",
+    "lint:php": "composer run lint",
+    "fix:php": "composer run fix",
+    "lint:json": "node tools/validate-json.mjs",
+    "check": "npm run lint:json && npm run lint:php",
+    "zip": "bash tools/build-zip.sh"
+  },
+  "devDependencies": {
+    "sharp": "^0.35.4",
+    "ttf2woff2": "^8.0.1"
+  }
+}
