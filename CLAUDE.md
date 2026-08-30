@@ -37,17 +37,17 @@ Presets are referenced in CSS as `var(--wp--preset--<type>--<slug>)`.
 | `text-color` | `#626368` | Grayscale / Gray 01 |
 | `gray-02` | `#8D8D8D` | Grayscale / Gray 02 |
 | `gray-03` | `#C6C6C6` | Grayscale / Gray 03 |
-| `secondary`, `dark-bg`, `heading-color`, `link-color` | `#12141D` | Text Color / Black |
+| `secondary`, `dark-bg`, `heading-color`, `link-color` | `#111B3A` | Text Color / Black |
 | `main-bg`, `text-white` | `#FFFFFF` | Text Color / White |
 | `light-bg` | `#F4F4F4` | (not in Figma spec) |
 
 > The Figma swatches' **typed hex labels disagree with their actual fills** — the blue swatch is labelled `#007CF5` but renders `#2D5BDB`. Always sample the pixel or read the bound variable; never trust the printed label.
 
-**Contrast (run `node tools/contrast.mjs`):** `primary` passes AA on white at 5.78:1. `accent` is **2.15:1 on white and fails even for large text** — only use it on dark surfaces (8.52:1 on `#12141D`) or as a non-text decorative fill. `gray-02` is large-text/border only (3.32:1); `gray-03` is borders and dividers only (1.71:1).
+**Contrast (run `node tools/contrast.mjs`):** `primary` passes AA on white at 5.78:1. `accent` is **2.15:1 on white and fails even for large text** — only use it on dark surfaces (7.85:1 on `#111B3A`) or as a non-text decorative fill. `gray-02` is large-text/border only (3.32:1); `gray-03` is borders and dividers only (1.71:1).
 
-**Font sizes:** `small|medium|large-paragraph`, `small|medium|large-title`, `heading-01`…`heading-06`, `button-large`, `button-small`. **Font family:** `poppins`. **Spacing:** numeric slugs matching the px value (`10`, `20`, `30`, `50`, `60`, `70`, `100`).
+**Font sizes:** `display`, `small|medium|large-paragraph`, `small|medium|large-title`, `heading-01`…`heading-06`, `button-large`, `button-small`. **Font family:** `poppins`. **Spacing:** numeric slugs matching the px value (`10`, `12`, `16`, `20`, `24`, `30`, `40`, `48`, `50`, `60`, `70`, `80`, `100`).
 
-**Line heights** live in `settings.custom.lineHeight` as `var(--wp--custom--line-height--<slug>)` — `heading-01`…`heading-06`, `title-large|medium|small`, `paragraph-large|medium|small`, `button-large|small`. A `fontSizes` preset **only ever emits `font-size`**; putting `lineHeight` or `fontWeight` in one does nothing (core's `PRESETS_METADATA` declares `'properties' => array( 'font-size' )`). That is why line heights are custom tokens rather than preset properties.
+**Line heights** live in `settings.custom.lineHeight` as `var(--wp--custom--line-height--<slug>)` — `display`, `heading-01`…`heading-06`, `title-large|medium|small`, `paragraph-large|medium|small`, `button-large|small`. Letter spacing: `settings.custom.letterSpacing.tight` (-0.03em). A `fontSizes` preset **only ever emits `font-size`**; putting `lineHeight` or `fontWeight` in one does nothing (core's `PRESETS_METADATA` declares `'properties' => array( 'font-size' )`). That is why line heights are custom tokens rather than preset properties.
 
 > **Whenever you override a heading's font size, set the matching line height too.** `styles.elements.h1`–`h6` bind a size *and* its line height together. Change only the size on a block — say an `h2` set to `heading-03` — and it keeps the `h2` element's `heading-02` leading, silently pairing a size with the wrong line height. This produced a 63.36px line height where the design called for 64px.
 
@@ -58,6 +58,7 @@ Values below are the component styles bound in the Figma page designs, which are
 | Style | Size / line height | Weight | Used for |
 |---|---|---|---|
 | Heading H1 | 94 / 100 | 700 | hero display heading |
+| Display | 64 / 64 | 700 | oversized marketing headings (CTA band), with `letter-spacing: tight` |
 | Heading H3 | 60 / 64 | 700 | section titles |
 | Title Large | 24 / 30 | 700 | card titles |
 | Title Medium | 20 / 26 | 700 | section eyebrows, footer headings |

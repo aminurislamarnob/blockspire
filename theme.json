@@ -222,6 +222,15 @@
 			],
 			"fontSizes": [
 				{
+					"name": "Display",
+					"slug": "display",
+					"size": "64px",
+					"fluid": {
+						"min": "36px",
+						"max": "64px"
+					}
+				},
+				{
 					"name": "Small Paragraph",
 					"slug": "small-paragraph",
 					"size": "14px"
@@ -323,6 +332,7 @@
 		},
 		"custom": {
 			"lineHeight": {
+				"display": "1",
 				"heading-01": "1.064",
 				"heading-02": "1.056",
 				"heading-03": "1.067",
