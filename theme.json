@@ -54,7 +54,7 @@
 				{
 					"name": "Secondary",
 					"slug": "secondary",
-					"color": "#12141D"
+					"color": "#111B3A"
 				},
 				{
 					"name": "Main BG",
@@ -69,12 +69,12 @@
 				{
 					"name": "Dark BG",
 					"slug": "dark-bg",
-					"color": "#12141D"
+					"color": "#111B3A"
 				},
 				{
 					"name": "Heading Color",
 					"slug": "heading-color",
-					"color": "#12141D"
+					"color": "#111B3A"
 				},
 				{
 					"name": "Text White",
@@ -99,7 +99,7 @@
 				{
 					"name": "Link Color",
 					"slug": "link-color",
-					"color": "#12141D"
+					"color": "#111B3A"
 				}
 			]
 		},
@@ -337,5 +337,17 @@
 				}
 			}
 		}
-	}
+	},
+	"templateParts": [
+		{
+			"name": "header",
+			"title": "Header",
+			"area": "header"
+		},
+		{
+			"name": "footer",
+			"title": "Footer",
+			"area": "footer"
+		}
+	]
 }
