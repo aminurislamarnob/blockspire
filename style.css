@@ -1,16 +1,16 @@
-/**
- * Theme Name:        Blockspire
- * Theme URI:         https://github.com/aminurislamarnob/blockspire
- * Description:       Blockspire is a sleek and modern WordPress block theme designed for professional company websites. Built with the latest block editor features, it offers a clean, responsive layout that’s easy to customize—perfect for showcasing your brand, services, and portfolio with elegance and clarity.
- * Version:           1.0.0
- * Author:            Aminur Islam Arnob
- * Author URI:        https://aiarnob.com
- * Tags:              block-patterns, full-site-editing
- * Text Domain:       blockspire
- * Domain Path:       /assets/lang
- * Tested up to:      6.4
- * Requires at least: 6.2
- * Requires PHP:      7.4
- * License:           GNU General Public License v2.0 or later
- * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- */
+/*
+Theme Name:        Blockspire
+Theme URI:         https://github.com/aminurislamarnob/blockspire
+Author:            Aminur Islam Arnob
+Author URI:        https://aiarnob.com
+Description:       Blockspire is a fast, accessible, multipurpose WordPress block theme for businesses, agencies, blogs, portfolios and online stores. Built entirely for full site editing, it ships a complete template hierarchy, a large pattern library, several style variations and themed WooCommerce templates, so you can assemble a polished site in the Site Editor without writing code. Self-hosted fonts, no external requests and no page-builder dependency keep it quick and private.
+Version:           1.0.0
+Requires at least: 6.7
+Tested up to:      7.1
+Requires PHP:      7.4
+License:           GNU General Public License v2.0 or later
+License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:       blockspire
+Domain Path:       /languages
+Tags:              blog, e-commerce, portfolio, accessibility-ready, block-patterns, block-styles, style-variations, full-site-editing, template-editing, translation-ready, rtl-language-support, custom-colors, custom-logo, custom-menu, editor-style, featured-images, full-width-template, sticky-post, threaded-comments, wide-blocks, grid-layout, one-column, two-columns, left-sidebar, right-sidebar
+*/

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<ruleset name="Blockspire">
+	<description>Coding standards for the Blockspire block theme.</description>
+
+	<file>.</file>
+
+	<exclude-pattern>/vendor/</exclude-pattern>
+	<exclude-pattern>/node_modules/</exclude-pattern>
+	<exclude-pattern>/build/</exclude-pattern>
+	<exclude-pattern>/assets/</exclude-pattern>
+
+	<arg name="extensions" value="php"/>
+	<arg name="colors"/>
+	<arg value="sp"/>
+
+	<rule ref="WordPress">
+		<!-- Block themes have no stylesheet to enqueue; theme.json handles styling. -->
+		<exclude name="WordPress.WP.EnqueuedResourceParameters"/>
+	</rule>
+
+	<rule ref="WordPress.WP.I18n">
+		<properties>
+			<property name="text_domain" type="array">
+				<element value="blockspire"/>
+			</property>
+		</properties>
+	</rule>
+
+	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+		<properties>
+			<property name="prefixes" type="array">
+				<element value="blockspire"/>
+			</property>
+		</properties>
+	</rule>
+
+	<config name="minimum_wp_version" value="6.7"/>
+	<config name="testVersion" value="7.4-"/>
+
+	<rule ref="PHPCompatibilityWP"/>
+</ruleset>
