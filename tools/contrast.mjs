@@ -31,6 +31,9 @@ const PAIRS = [
 	[ 'heading-color', 'light-bg', 4.5, 'headings on light panel' ],
 	[ 'text-white', 'dark-bg', 4.5, 'footer text' ],
 	[ 'gray-02', 'main-bg', 3, 'muted text (large only)' ],
+	// The CTA band sets white text on the primary colour; its heading is
+	// display size, so large-text 3:1 is the applicable minimum.
+	[ 'text-white', 'primary', 3, 'band heading on primary (large)' ],
 ];
 
 // Button text/background comes from styles.elements.button, which variations
