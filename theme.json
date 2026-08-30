@@ -370,6 +370,7 @@
 		}
 	},
 	"styles": {
+		"css": ":where(a:not(.wp-element-button),.wp-element-button,.wp-block-button__link,input,button,textarea,select):focus:not(:focus-visible){outline:none}",
 		"color": {
 			"background": "var(--wp--preset--color--main-bg)",
 			"text": "var(--wp--preset--color--text-color)"
@@ -428,10 +429,6 @@
 					}
 				},
 				":focus": {
-					"color": {
-						"text": "var(--wp--preset--color--text-white)",
-						"background": "var(--wp--preset--color--dark-bg)"
-					},
 					"outline": {
 						"color": "currentColor",
 						"style": "solid",
