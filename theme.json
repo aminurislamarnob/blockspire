@@ -370,6 +370,7 @@
 		}
 	},
 	"styles": {
+		"css": ":where(a:not(.wp-element-button),.wp-element-button,.wp-block-button__link,input,button,textarea,select):focus{outline:none}\n:where(.wp-element-button,.wp-block-button__link,a:not(.wp-element-button)):focus-visible{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:0.25em}",
 		"color": {
 			"background": "var(--wp--preset--color--main-bg)",
 			"text": "var(--wp--preset--color--text-color)"
@@ -402,12 +403,6 @@
 				":focus": {
 					"color": {
 						"text": "var(--wp--preset--color--primary)"
-					},
-					"outline": {
-						"color": "currentColor",
-						"style": "solid",
-						"width": "2px",
-						"offset": "2px"
 					}
 				},
 				":active": {
@@ -425,18 +420,6 @@
 					"color": {
 						"text": "var(--wp--preset--color--text-white)",
 						"background": "var(--wp--preset--color--dark-bg)"
-					}
-				},
-				":focus": {
-					"color": {
-						"text": "var(--wp--preset--color--text-white)",
-						"background": "var(--wp--preset--color--dark-bg)"
-					},
-					"outline": {
-						"color": "currentColor",
-						"style": "solid",
-						"width": "2px",
-						"offset": "-4px"
 					}
 				},
 				"border": {

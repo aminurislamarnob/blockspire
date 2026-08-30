@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-08-30T18:46:27+00:00\n"
+"POT-Creation-Date: 2026-08-30T19:21:29+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: blockspire\n"
@@ -90,14 +90,15 @@ msgstr ""
 
 #: patterns/cta.php
 msgctxt "Pattern description"
-msgid "A wide coloured band with a display heading, a call to action button and a subtle decorative texture."
+msgid "A wide coloured band with a display heading, a newsletter sign-up form when Mailchimp for WordPress is active (otherwise a call to action button), and a subtle decorative texture."
 msgstr ""
 
-#: patterns/cta.php:19
+#: patterns/cta.php:23
+#: patterns/cta.php:37
 msgid "Got A Project? Let&#8217;s Talk."
 msgstr ""
 
-#: patterns/cta.php:25
+#: patterns/cta.php:43
 msgid "Start a Project"
 msgstr ""
 
@@ -165,14 +166,20 @@ msgid "Help"
 msgstr ""
 
 #. translators: %s: WordPress.
-#: patterns/footer.php:86
+#: patterns/footer.php:89
+#: patterns/footer.php:110
 #, php-format
 msgid "Proudly powered by %s"
 msgstr ""
 
 #. translators: %s: WordPress.
-#: patterns/footer.php:86
+#: patterns/footer.php:89
+#: patterns/footer.php:110
 msgid "https://wordpress.org/"
+msgstr ""
+
+#: patterns/footer.php:98
+msgid "Subscribe newsletter"
 msgstr ""
 
 #: patterns/hero.php
@@ -526,6 +533,16 @@ msgstr ""
 #: styles/blocks/button-rounded.json
 msgctxt "Style variation name"
 msgid "Rounded"
+msgstr ""
+
+#: styles/blocks/group-newsletter-boxed.json
+msgctxt "Style variation name"
+msgid "Newsletter boxed"
+msgstr ""
+
+#: styles/blocks/group-newsletter-underline.json
+msgctxt "Style variation name"
+msgid "Newsletter underline"
 msgstr ""
 
 #: styles/blocks/navigation-bulleted.json

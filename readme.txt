@@ -30,6 +30,14 @@ Fonts are self-hosted and the theme makes no external requests, so nothing about
 
 No. WooCommerce is supported if you want to sell, but nothing is required.
 
+= How do I add the newsletter sign-up form? =
+
+Install and connect the free Mailchimp for WordPress plugin (or Brevo). The call to action band and the footer pick the form up automatically and style it to match the theme. For the cleanest result, set the form markup in the plugin to:
+
+`<p><label for="newsletter-email" class="screen-reader-text">Email address</label><input type="email" id="newsletter-email" name="EMAIL" placeholder="Enter your email" required /><input type="submit" value="Subscribe" /></p>`
+
+You can also drop any sign-up form into a Group block and pick the "Newsletter underline" or "Newsletter boxed" style.
+
 = How do I change the colours and fonts? =
 
 Go to Appearance > Editor > Styles. Pick a style variation, or open the styles panel to adjust colours and typography yourself.
@@ -57,6 +65,12 @@ Copyright Google LLC
 License: Apache License 2.0
 License URI: https://www.apache.org/licenses/LICENSE-2.0
 Source: https://fonts.google.com/icons
+
+Arrow icon "ArrowUpRight" from Phosphor Icons, embedded as a data URI in styles/blocks/group-newsletter-boxed.json
+Copyright 2023 Phosphor Icons
+License: MIT License
+License URI: https://github.com/phosphor-icons/core/blob/main/LICENSE
+Source: https://phosphoricons.com/
 
 Arrow icon "arrow-right" from Feather Icons, embedded as a data URI in styles/blocks/paragraph-arrow-link.json
 Copyright 2013-2023 Cole Bemis

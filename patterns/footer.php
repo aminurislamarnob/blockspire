@@ -79,13 +79,39 @@
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
 
-<!-- wp:paragraph {"style":{"typography":{"lineHeight":"var:custom|line-height|paragraph-medium"}},"textColor":"text-white","fontSize":"medium-paragraph"} -->
+<?php if ( function_exists( 'mc4wp_show_form' ) ) : ?>
+<!-- wp:columns {"verticalAlignment":"bottom","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|40","left":"var:preset|spacing|40"}}}} -->
+<div class="wp-block-columns are-vertically-aligned-bottom"><!-- wp:column {"verticalAlignment":"bottom"} -->
+<div class="wp-block-column is-vertically-aligned-bottom"><!-- wp:paragraph {"style":{"typography":{"lineHeight":"var:custom|line-height|paragraph-medium"}},"textColor":"text-white","fontSize":"medium-paragraph"} -->
 <p class="has-text-white-color has-text-color has-medium-paragraph-font-size" style="line-height:var(--wp--custom--line-height--paragraph-medium)">
-<?php
-/* translators: %s: WordPress. */
-printf( esc_html__( 'Proudly powered by %s', 'blockspire' ), '<a href="' . esc_url( __( 'https://wordpress.org/', 'blockspire' ) ) . '" rel="nofollow">WordPress</a>' );
-?>
+	<?php
+	/* translators: %s: WordPress. */
+	printf( esc_html__( 'Proudly powered by %s', 'blockspire' ), '<a href="' . esc_url( __( 'https://wordpress.org/', 'blockspire' ) ) . '" rel="nofollow">WordPress</a>' );
+	?>
 </p>
 <!-- /wp:paragraph --></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"verticalAlignment":"bottom","width":"416px"} -->
+<div class="wp-block-column is-vertically-aligned-bottom" style="flex-basis:416px"><!-- wp:group {"className":"is-style-newsletter-boxed","style":{"spacing":{"blockGap":"var:preset|spacing|16"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group is-style-newsletter-boxed"><!-- wp:paragraph {"style":{"typography":{"lineHeight":"var:custom|line-height|paragraph-small"}},"textColor":"text-white","fontSize":"small-paragraph"} -->
+<p class="has-text-white-color has-text-color has-small-paragraph-font-size" style="line-height:var(--wp--custom--line-height--paragraph-small)"><?php echo esc_html__( 'Subscribe newsletter', 'blockspire' ); ?></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:mailchimp-for-wp/form /--></div>
+<!-- /wp:group --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+<?php else : ?>
+<!-- wp:paragraph {"style":{"typography":{"lineHeight":"var:custom|line-height|paragraph-medium"}},"textColor":"text-white","fontSize":"medium-paragraph"} -->
+<p class="has-text-white-color has-text-color has-medium-paragraph-font-size" style="line-height:var(--wp--custom--line-height--paragraph-medium)">
+	<?php
+	/* translators: %s: WordPress. */
+	printf( esc_html__( 'Proudly powered by %s', 'blockspire' ), '<a href="' . esc_url( __( 'https://wordpress.org/', 'blockspire' ) ) . '" rel="nofollow">WordPress</a>' );
+	?>
+</p>
+<!-- /wp:paragraph -->
+<?php endif; ?>
+</div>
 <!-- /wp:group --></footer>
 <!-- /wp:group -->
