@@ -113,6 +113,7 @@
 			"textAlign": true,
 			"writingMode": true,
 			"defaultFontSizes": false,
+			"fluid": true,
 			"fontFamilies": [
 				{
 					"name": "Poppins",
@@ -152,13 +153,13 @@
 				{ "name": "Large Paragraph", "slug": "large-paragraph", "size": "18px" },
 				{ "name": "Small Title", "slug": "small-title", "size": "16px" },
 				{ "name": "Medium Title", "slug": "medium-title", "size": "20px" },
-				{ "name": "Large Title", "slug": "large-title", "size": "24px" },
-				{ "name": "Heading 01", "slug": "heading-01", "size": "94px" },
-				{ "name": "Heading 02", "slug": "heading-02", "size": "72px" },
-				{ "name": "Heading 03", "slug": "heading-03", "size": "60px" },
-				{ "name": "Heading 04", "slug": "heading-04", "size": "48px" },
-				{ "name": "Heading 05", "slug": "heading-05", "size": "36px" },
-				{ "name": "Heading 06", "slug": "heading-06", "size": "30px" },
+				{ "name": "Large Title", "slug": "large-title", "size": "24px", "fluid": { "min": "20px", "max": "24px" } },
+				{ "name": "Heading 01", "slug": "heading-01", "size": "94px", "fluid": { "min": "40px", "max": "94px" } },
+				{ "name": "Heading 02", "slug": "heading-02", "size": "72px", "fluid": { "min": "36px", "max": "72px" } },
+				{ "name": "Heading 03", "slug": "heading-03", "size": "60px", "fluid": { "min": "32px", "max": "60px" } },
+				{ "name": "Heading 04", "slug": "heading-04", "size": "48px", "fluid": { "min": "28px", "max": "48px" } },
+				{ "name": "Heading 05", "slug": "heading-05", "size": "36px", "fluid": { "min": "26px", "max": "36px" } },
+				{ "name": "Heading 06", "slug": "heading-06", "size": "30px", "fluid": { "min": "24px", "max": "30px" } },
 				{ "name": "Button Large", "slug": "button-large", "size": "16px" },
 				{ "name": "Button Small", "slug": "button-small", "size": "14px" }
 			]

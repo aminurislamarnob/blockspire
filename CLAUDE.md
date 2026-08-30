@@ -77,6 +77,11 @@ node tools/contrast.mjs   # WCAG contrast matrix for the palette
 
 `npm run lint:json` exists because a mistyped `theme.json` key parses fine and then does nothing. It already caught `fontStyles` (correct key: `fontStyle`), `lineHeight`/`fontWeight` on a font-size preset, and `padding-top`-style keys under `styles.spacing.padding` (correct: `top`/`right`/`bottom`/`left`). Run it after every `theme.json` edit.
 
-## Editing theme.json
+## Caching while developing
 
-Changes may not appear immediately: WordPress caches compiled global styles. If a change doesn't show up, hard-refresh and flush caches. Site Editor customizations saved by a user are stored in the database (`wp_global_styles`) and **override** `theme.json` — a "my change isn't applying" report is usually this, not a syntax error.
+**Set `define( 'WP_DEVELOPMENT_MODE', 'theme' );` in `wp-config.php`.** Without it, newly added or edited patterns will not appear, and you will waste time thinking the pattern is broken when it is only cached.
+
+- **Patterns** are cached in a *site* transient, `wp_theme_files_patterns-<cache_hash>`, keyed by the theme's `Version`. `wp transient delete --all` does **not** clear it (that only removes ordinary transients). Clear it with `wp eval 'wp_get_theme()->delete_pattern_cache();'`, or bump the theme version, or turn on theme development mode, which bypasses the cache entirely.
+- **Templates and template parts** are also cached; flush with `wp cache flush` after adding files.
+- **Global styles** compiled from `theme.json` are cached too — hard-refresh if a token change doesn't show.
+- Site Editor customizations saved by a user live in the database (`wp_global_styles`) and **override** `theme.json`. A "my change isn't applying" report is usually this, not a syntax error.
