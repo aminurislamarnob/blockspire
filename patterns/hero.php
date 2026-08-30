@@ -31,9 +31,9 @@
 <!-- /wp:column -->
 
 <!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
-<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:group {"style":{"border":{"radius":"8px"},"dimensions":{"minHeight":"480px"}},"backgroundColor":"light-bg","layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-light-bg-background-color has-background" style="border-radius:8px;min-height:480px"></div>
-<!-- /wp:group --></div>
+<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:image {"aspectRatio":"4/3","scale":"cover","sizeSlug":"full","linkDestination":"none","style":{"border":{"radius":"8px"}}} -->
+<figure class="wp-block-image size-full has-custom-border"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/hero-team.webp' ) ); ?>" alt="<?php echo esc_attr__( 'A team collaborating around a table with laptops open', 'blockspire' ); ?>" width="960" height="640" style="border-radius:8px;aspect-ratio:4/3;object-fit:cover"/></figure>
+<!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
 <!-- /wp:group -->
