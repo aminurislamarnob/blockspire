@@ -33,8 +33,8 @@ $blockspire_promises = array(
 <?php foreach ( $blockspire_promises as $blockspire_promise ) : ?>
 <!-- wp:column {"verticalAlignment":"center"} -->
 <div class="wp-block-column is-vertically-aligned-center"><!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
-<div class="wp-block-group"><!-- wp:group {"style":{"spacing":{"padding":{"top":"var:preset|spacing|16","right":"var:preset|spacing|16","bottom":"var:preset|spacing|16","left":"var:preset|spacing|16"}},"border":{"color":"var:preset|color|text-white","width":"1px","radius":"100px"},"dimensions":{"minWidth":"56px"}},"layout":{"type":"constrained","contentSize":"24px"}} -->
-<div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--text-white);border-width:1px;border-radius:100px;min-width:56px;padding-top:var(--wp--preset--spacing--16);padding-right:var(--wp--preset--spacing--16);padding-bottom:var(--wp--preset--spacing--16);padding-left:var(--wp--preset--spacing--16)"><!-- wp:image {"width":"24px","height":"24px","scale":"contain","sizeSlug":"full","linkDestination":"none"} -->
+<div class="wp-block-group"><!-- wp:group {"style":{"typography":{"lineHeight":"0"},"border":{"color":"var:preset|color|text-white","width":"1px","radius":"100px"},"dimensions":{"minWidth":"56px","minHeight":"56px"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center","verticalAlignment":"center"}} -->
+<div class="wp-block-group has-border-color" style="border-color:var(--wp--preset--color--text-white);border-width:1px;border-radius:100px;min-height:56px;min-width:56px;line-height:0"><!-- wp:image {"width":"24px","height":"24px","scale":"contain","sizeSlug":"full","linkDestination":"none"} -->
 <figure class="wp-block-image size-full is-resized"><img src="<?php echo esc_url( get_theme_file_uri( 'assets/images/' . $blockspire_promise['icon'] . '.svg' ) ); ?>" alt="" style="object-fit:contain;width:24px;height:24px"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:group -->
