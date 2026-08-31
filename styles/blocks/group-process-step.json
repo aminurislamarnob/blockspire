@@ -1,0 +1,10 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Step with connector",
+	"slug": "process-step",
+	"blockTypes": [ "core/group" ],
+	"styles": {
+		"css": "&{position:relative}\n&::before{content:\"\";position:absolute;inset-block:44px -40px;inset-inline-start:18px;inline-size:1px;background-color:var(--wp--preset--color--heading-color)}"
+	}
+}

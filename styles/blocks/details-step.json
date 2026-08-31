@@ -1,0 +1,10 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Accordion step",
+	"slug": "step",
+	"blockTypes": [ "core/details" ],
+	"styles": {
+		"css": "&{flex:1 1 auto;min-inline-size:0;interpolate-size:allow-keywords}\n& summary{list-style:none;cursor:pointer}\n& summary::-webkit-details-marker{display:none}\n& summary .wp-block-heading{margin-block:0}\n& > :not(summary){margin-block-start:var(--wp--preset--spacing--24)}\n& > :not(summary) + :not(summary){margin-block-start:var(--wp--preset--spacing--32)}\n&::details-content{height:0;overflow:hidden;transition:height 320ms ease,content-visibility 320ms;transition-behavior:allow-discrete}\n&[open]::details-content{height:auto}"
+	}
+}

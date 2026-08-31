@@ -26,6 +26,14 @@ Fonts are self-hosted and the theme makes no external requests, so nothing about
 
 == Frequently Asked Questions ==
 
+= What is on the home page? =
+
+The Front Page template assembles ten patterns in order: the hero, a dark promise
+strip, an about split, a statistics row, the services grid, the work process, the
+team band, client stories, the latest two posts and a call to action. Each one is
+an ordinary pattern, so you can reorder them, drop any of them, or swap in
+something else from the inserter without touching a file.
+
 = Does Blockspire require any plugins? =
 
 No. WooCommerce is supported if you want to sell, but nothing is required.
@@ -59,11 +67,30 @@ Install and connect the free Mailchimp for WordPress plugin (or Brevo). The call
 
 You can also drop any sign-up form into a Group block and pick the "Newsletter underline" or "Newsletter boxed" style.
 
+= Can I make a list of steps open and close? =
+
+Yes, and no JavaScript is involved. Apply the "Accordion step" style to a Details
+block; give every Details block in the group the same Name in the block settings
+and opening one will close the others. The work process pattern on the home page
+is built this way, with its first step open.
+
 = Is there a "back to top" button? =
 
 Yes. It appears once you have scrolled about a screen down, and returns keyboard
 focus to the top of the page as well as scrolling there. It respects the reduced
 motion setting, and it is never shown if JavaScript is unavailable.
+
+= Do the statistics count up? =
+
+Yes. Apply the "Counting figure" paragraph style and the number counts up from
+zero the first time it scrolls into view. The statistics row on the home page
+already uses it. The figure in the markup is always the final one, so it is
+correct with JavaScript off, and the animation is skipped entirely for visitors
+who have asked their system for reduced motion.
+
+Plain numbers work, as do grouped ones ("1,200") and decimals ("4.8"), with any
+prefix or suffix kept ("$40k", "60+"). Anything else is left alone rather than
+guessed at.
 
 = Some patterns have grey boxes instead of images =
 
@@ -94,9 +121,11 @@ License: SIL Open Font License, 1.1
 License URI: https://scripts.sil.org/OFL
 Source: https://fonts.google.com/specimen/Poppins
 
-Service icons, decorative graphics and the arrow icons embedded as data URIs in
-styles/blocks/button-arrow.json, button-outline-arrow.json, button-chip.json,
-group-newsletter-underline.json and group-newsletter-boxed.json
+Service icons, decorative graphics, the five star rating mask and the arrow icons
+embedded as data URIs in styles/blocks/button-arrow.json,
+button-outline-arrow.json, button-chip.json, read-more-arrow.json,
+paragraph-rating.json, group-newsletter-underline.json and
+group-newsletter-boxed.json
 (assets/images/icon-*.svg, band-decoration.svg, dot-grid.svg)
 Copyright 2026 Aminur Islam Arnob
 License: GNU General Public License v2.0 or later
