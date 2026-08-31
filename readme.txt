@@ -65,11 +65,17 @@ Yes. It appears once you have scrolled about a screen down, and returns keyboard
 focus to the top of the page as well as scrolling there. It respects the reduced
 motion setting, and it is never shown if JavaScript is unavailable.
 
-= The team pattern has grey boxes instead of photos =
+= Some patterns have grey boxes instead of images =
 
-That is deliberate. The theme does not ship stock portraits, so the pattern
-leaves a tinted placeholder in each card. Select it and replace it with an Image
-block holding your own photo.
+That is deliberate. The theme does not ship stock photography, so the team,
+portfolio and alternating services patterns leave a tinted placeholder where a
+picture belongs. Select one and replace it with an Image block of your own.
+
+= Can I use the contact pattern with my form plugin? =
+
+Yes. Themes on WordPress.org cannot bundle form handling, so the contact panel
+ships with a heading, a short invitation and a button. Delete the button and
+drop your form plugin's block in its place; the panel styling stays.
 
 = How do I change the colours and fonts? =
 
