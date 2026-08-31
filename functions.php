@@ -57,6 +57,7 @@ if ( ! function_exists( 'blockspire_register_pattern_categories' ) ) {
 			'blockspire-contact'      => __( 'Blockspire: Contact', 'blockspire' ),
 			'blockspire-blog'         => __( 'Blockspire: Blog', 'blockspire' ),
 			'blockspire-pages'        => __( 'Blockspire: Pages', 'blockspire' ),
+			'blockspire-shop'         => __( 'Blockspire: Shop', 'blockspire' ),
 		);
 
 		foreach ( $categories as $slug => $label ) {

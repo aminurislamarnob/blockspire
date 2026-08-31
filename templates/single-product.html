@@ -1,0 +1,33 @@
+<!-- wp:template-part {"slug":"header","tagName":"header","area":"header"} /-->
+
+<!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|100"},"blockGap":"var:preset|spacing|48"}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--100)"><!-- wp:woocommerce/breadcrumbs {"textColor":"text-color","fontSize":"small-paragraph"} /-->
+
+<!-- wp:woocommerce/store-notices /-->
+
+<!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|48","left":"var:preset|spacing|70"}}}} -->
+<div class="wp-block-columns alignwide"><!-- wp:column {"width":"512px"} -->
+<div class="wp-block-column" style="flex-basis:512px"><!-- wp:woocommerce/product-image-gallery /--></div>
+<!-- /wp:column -->
+
+<!-- wp:column {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}}} -->
+<div class="wp-block-column"><!-- wp:post-title {"level":1,"style":{"typography":{"lineHeight":"1.083"},"spacing":{"margin":{"top":"0","bottom":"0"}}},"fontSize":"heading-04","__woocommerceNamespace":"woocommerce/product-query/product-title"} /-->
+
+<!-- wp:woocommerce/product-rating {"isDescendentOfSingleProductTemplate":true,"fontSize":"small-paragraph"} /-->
+
+<!-- wp:woocommerce/product-price {"isDescendentOfSingleProductTemplate":true,"textColor":"heading-color","style":{"typography":{"fontWeight":"700","lineHeight":"1.25"}},"fontSize":"heading-06"} /-->
+
+<!-- wp:post-excerpt {"__woocommerceNamespace":"woocommerce/product-query/product-summary","excerptLength":100,"textColor":"text-color","fontSize":"medium-paragraph"} /-->
+
+<!-- wp:woocommerce/add-to-cart-form /-->
+
+<!-- wp:pattern {"slug":"blockspire/product-meta"} /--></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->
+
+<!-- wp:woocommerce/product-details {"hideTabTitle":true,"align":"wide","className":"is-style-minimal"} /-->
+
+<!-- wp:pattern {"slug":"blockspire/product-related"} /--></main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer","area":"footer"} /-->

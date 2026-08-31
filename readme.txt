@@ -30,6 +30,18 @@ Fonts are self-hosted and the theme makes no external requests, so nothing about
 
 No. WooCommerce is supported if you want to sell, but nothing is required.
 
+= What does Blockspire change when WooCommerce is active? =
+
+It replaces every WooCommerce template with a themed one: the shop and product
+category, tag, brand and attribute archives, single products, product search
+results, cart, checkout and the order confirmation. Product categories, tags and
+brands reuse the shop archive, so editing "Product Catalog" in the Site Editor
+covers all of them.
+
+Checkout and the order confirmation use the minimal header and footer so there is
+nothing to click away from at the point of purchase. A cart icon appears in the
+main header only while WooCommerce is active.
+
 = How do I add the newsletter sign-up form? =
 
 Install and connect the free Mailchimp for WordPress plugin (or Brevo). The call to action band and the footer pick the form up automatically and style it to match the theme. For the cleanest result, set the form markup in the plugin to:
