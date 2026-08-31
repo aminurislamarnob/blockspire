@@ -1,0 +1,10 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Product cards",
+	"slug": "product-cards",
+	"blockTypes": [ "woocommerce/product-collection" ],
+	"styles": {
+		"css": "& .wc-block-product{display:flex;flex-direction:column;overflow:hidden;border-radius:12px;background-color:var(--wp--preset--color--main-bg);box-shadow:0 0 0 1px var(--wp--preset--color--gray-03)}\n& .wp-block-woocommerce-product-image{margin:0;border-radius:0}\n& .wp-block-woocommerce-product-image img{inline-size:100%;border-radius:0}\n& .wp-block-post-title{padding-inline:16px}\n& .wp-block-post-terms{padding-inline:16px;letter-spacing:0.05em}\n& .wp-block-post-terms a{color:inherit;text-decoration:none}\n& .wp-block-post-terms a:is(:hover,:focus-visible){text-decoration:underline;text-underline-offset:0.25em}\n& .wp-block-post-title a{text-decoration:none}\n& .wp-block-post-title a:is(:hover,:focus-visible){text-decoration:underline;text-underline-offset:0.25em}"
+	}
+}

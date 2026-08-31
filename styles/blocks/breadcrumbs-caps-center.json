@@ -1,0 +1,10 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Uppercase trail, centred",
+	"slug": "breadcrumb-caps-center",
+	"blockTypes": [ "woocommerce/breadcrumbs" ],
+	"styles": {
+		"css": "&{text-transform:uppercase;letter-spacing:0.05em;font-weight:600}\n& .woocommerce-breadcrumb{display:flex;flex-wrap:wrap;justify-content:center;gap:4px;text-align:center}\n& a{text-decoration:none}\n& a:is(:hover,:focus-visible){text-decoration:underline;text-underline-offset:0.25em}"
+	}
+}

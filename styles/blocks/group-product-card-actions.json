@@ -1,0 +1,10 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Product card actions",
+	"slug": "product-card-actions",
+	"blockTypes": [ "core/group" ],
+	"styles": {
+		"css": "&{margin-block-start:auto;border-block-start:1px solid var(--wp--preset--color--gray-03);gap:0}\n& > *{flex:1 1 0;min-inline-size:0;margin:0;text-align:center}\n& > * + *{border-inline-start:1px solid var(--wp--preset--color--gray-03)}\n& .wp-block-woocommerce-product-price{padding-block:16px}\n& .wp-element-button{inline-size:100%;padding-block:16px;padding-inline:8px;border:0;border-radius:0;background-color:transparent;color:var(--wp--preset--color--heading-color);font-size:inherit;font-weight:500}\n& .wp-element-button:is(:hover,:focus-visible){background-color:var(--wp--preset--color--light-bg);color:var(--wp--preset--color--primary)}\n& .added_to_cart{display:none}"
+	}
+}

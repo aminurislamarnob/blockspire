@@ -1,0 +1,10 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Catalog toolbar",
+	"slug": "catalog-toolbar",
+	"blockTypes": [ "core/group" ],
+	"styles": {
+		"css": "& .wc-block-product-results-count{margin:0;text-transform:uppercase;letter-spacing:0.05em;font-weight:500}\n& .wc-block-catalog-sorting{margin:0}\n& select{padding-block:10px;padding-inline:20px 44px;border:1px solid var(--wp--preset--color--gray-03);border-radius:100px;background-color:transparent;color:inherit;font-family:inherit;font-size:inherit;line-height:1.5}"
+	}
+}

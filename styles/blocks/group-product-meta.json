@@ -1,0 +1,10 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Product meta",
+	"slug": "product-meta",
+	"blockTypes": [ "core/group" ],
+	"styles": {
+		"css": "& .wp-block-woocommerce-product-sku{text-transform:uppercase;letter-spacing:0.05em;font-weight:600}\n& .wp-block-post-terms{text-transform:uppercase;letter-spacing:0.05em;font-weight:600}\n& .wp-block-post-terms a{font-weight:400;text-decoration:none}\n& .wp-block-post-terms a:is(:hover,:focus-visible){text-decoration:underline;text-underline-offset:0.25em}"
+	}
+}

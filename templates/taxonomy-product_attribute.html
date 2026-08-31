@@ -1,17 +1,23 @@
 <!-- wp:template-part {"slug":"header","tagName":"header","area":"header"} /-->
 
-<!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|100"},"blockGap":"var:preset|spacing|48"}},"layout":{"type":"constrained"}} -->
-<main class="wp-block-group" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--100)"><!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"var:preset|spacing|16"}},"layout":{"type":"default"}} -->
-<div class="wp-block-group alignwide"><!-- wp:woocommerce/breadcrumbs {"textColor":"text-color","fontSize":"small-paragraph"} /-->
-
-<!-- wp:query-title {"type":"archive","showPrefix":false,"style":{"typography":{"lineHeight":"1.067"}},"fontSize":"heading-03"} /-->
-
-<!-- wp:term-description {"textColor":"text-color","fontSize":"large-paragraph"} /--></div>
-<!-- /wp:group -->
+<!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|100"},"blockGap":"var:preset|spacing|70"}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group" style="padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--100)"><!-- wp:pattern {"slug":"blockspire/product-archive-hero"} /-->
 
 <!-- wp:woocommerce/store-notices /-->
 
-<!-- wp:pattern {"slug":"blockspire/product-grid"} /--></main>
+<!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|48","left":"var:preset|spacing|70"}}}} -->
+<div class="wp-block-columns alignwide"><!-- wp:column {"width":"280px"} -->
+<div class="wp-block-column" style="flex-basis:280px"><!-- wp:group {"tagName":"aside","layout":{"type":"default"}} -->
+<aside class="wp-block-group"><!-- wp:pattern {"slug":"blockspire/product-filters"} /--></aside>
+<!-- /wp:group --></div>
+<!-- /wp:column -->
+
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:term-description {"textColor":"text-color","style":{"spacing":{"margin":{"bottom":"var:preset|spacing|32"}}},"fontSize":"medium-paragraph"} /-->
+
+<!-- wp:pattern {"slug":"blockspire/product-grid"} /--></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns --></main>
 <!-- /wp:group -->
 
 <!-- wp:template-part {"slug":"footer","tagName":"footer","area":"footer"} /-->
