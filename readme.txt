@@ -59,6 +59,18 @@ Install and connect the free Mailchimp for WordPress plugin (or Brevo). The call
 
 You can also drop any sign-up form into a Group block and pick the "Newsletter underline" or "Newsletter boxed" style.
 
+= Is there a "back to top" button? =
+
+Yes. It appears once you have scrolled about a screen down, and returns keyboard
+focus to the top of the page as well as scrolling there. It respects the reduced
+motion setting, and it is never shown if JavaScript is unavailable.
+
+= The team pattern has grey boxes instead of photos =
+
+That is deliberate. The theme does not ship stock portraits, so the pattern
+leaves a tinted placeholder in each card. Select it and replace it with an Image
+block holding your own photo.
+
 = How do I change the colours and fonts? =
 
 Go to Appearance > Editor > Styles. Pick a style variation, or open the styles panel to adjust colours and typography yourself.
