@@ -21,10 +21,16 @@
 
 <!-- wp:navigation {"textColor":"link-color","overlayBackgroundColor":"main-bg","overlayTextColor":"link-color","style":{"spacing":{"blockGap":"var:preset|spacing|32"}},"fontSize":"button-large"} /-->
 
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
+<div class="wp-block-group">
+<?php if ( class_exists( 'WooCommerce' ) ) : ?>
+<!-- wp:woocommerce/mini-cart {"hasHiddenPrice":true,"fontSize":"button-large"} /-->
+<?php endif; ?>
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-rounded"} -->
 <div class="wp-block-button is-style-rounded"><a class="wp-block-button__link wp-element-button" href="#"><?php echo esc_html__( 'Start A Project', 'blockspire' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
+<!-- /wp:group --></div>
 <!-- /wp:group --></header>
 <!-- /wp:group -->
