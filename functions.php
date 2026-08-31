@@ -69,20 +69,34 @@ add_action( 'init', 'blockspire_register_pattern_categories' );
 
 if ( ! function_exists( 'blockspire_enqueue_scripts' ) ) {
 	/**
-	 * Enqueues the scroll-back-to-top behaviour.
+	 * Enqueues the two behaviours the theme ships.
 	 *
-	 * The only script the theme ships. It is deferred and dependency-free; the
-	 * button it drives renders hidden, so nothing appears if this never runs.
+	 * Both are deferred and dependency-free, and both are enhancements only:
+	 * the scroll-to-top button renders hidden, and a counting figure is already
+	 * written out at its final value. Nothing is missing if either never runs.
 	 *
 	 * @since 1.0.0
 	 * @return void
 	 */
 	function blockspire_enqueue_scripts() {
+		$blockspire_version = wp_get_theme()->get( 'Version' );
+
 		wp_enqueue_script(
 			'blockspire-scroll-to-top',
 			get_theme_file_uri( 'assets/js/scroll-to-top.js' ),
 			array(),
-			wp_get_theme()->get( 'Version' ),
+			$blockspire_version,
+			array(
+				'strategy'  => 'defer',
+				'in_footer' => true,
+			)
+		);
+
+		wp_enqueue_script(
+			'blockspire-counter-up',
+			get_theme_file_uri( 'assets/js/counter-up.js' ),
+			array(),
+			$blockspire_version,
 			array(
 				'strategy'  => 'defer',
 				'in_footer' => true,

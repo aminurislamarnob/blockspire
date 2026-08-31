@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-08-31T11:06:58+00:00\n"
+"POT-Creation-Date: 2026-08-31T12:49:02+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: blockspire\n"
@@ -87,7 +87,7 @@ msgstr ""
 msgid "Blockspire: Shop"
 msgstr ""
 
-#: functions.php:110
+#: functions.php:124
 msgid "Scroll back to top"
 msgstr ""
 
@@ -126,6 +126,38 @@ msgstr ""
 
 #: patterns/404.php:32
 msgid "Back to home"
+msgstr ""
+
+#: patterns/about-split.php
+msgctxt "Pattern title"
+msgid "About section with statement and image"
+msgstr ""
+
+#: patterns/about-split.php
+msgctxt "Pattern description"
+msgid "An eyebrow and large heading over a two column split: an image on one side, a bold statement, supporting paragraph and button on the other."
+msgstr ""
+
+#: patterns/about-split.php:18
+#: patterns/media-text.php:31
+#: patterns/page-header.php:18
+msgid "About us"
+msgstr ""
+
+#: patterns/about-split.php:22
+msgid "We help to accelerate your business growth"
+msgstr ""
+
+#: patterns/about-split.php:35
+msgid "We develop considered solutions for organisations, and we have built a reputation for client satisfaction on the strength of the work itself."
+msgstr ""
+
+#: patterns/about-split.php:39
+msgid "Every engagement starts with the same question: what is this site actually for? The answer shapes the scope, the build and the way we hand it over."
+msgstr ""
+
+#: patterns/about-split.php:44
+msgid "More about us"
 msgstr ""
 
 #: patterns/about-statement.php
@@ -193,6 +225,7 @@ msgstr ""
 #: patterns/blog-heading.php:17
 #: patterns/footer.php:61
 #: patterns/posts-grid.php:19
+#: patterns/posts-latest.php:19
 msgid "Blog"
 msgstr ""
 
@@ -567,6 +600,28 @@ msgstr ""
 msgid "Every project is handled with discipline, honest communication and a commitment to doing the job properly. We make sure your investment is protected and your expectations are met, and if anything is not right we say so early and put it right."
 msgstr ""
 
+#: patterns/feature-strip.php
+msgctxt "Pattern title"
+msgid "Promise strip on a dark band"
+msgstr ""
+
+#: patterns/feature-strip.php
+msgctxt "Pattern description"
+msgid "Three short promises spread across a full width dark band, each with a circled outline icon, for sitting directly under a hero."
+msgstr ""
+
+#: patterns/feature-strip.php:17
+msgid "Developed with the highest care. Always up to date."
+msgstr ""
+
+#: patterns/feature-strip.php:21
+msgid "An expert and dedicated team on every project."
+msgstr ""
+
+#: patterns/feature-strip.php:25
+msgid "Support that answers, for as long as you need it."
+msgstr ""
+
 #: patterns/features.php
 msgctxt "Pattern title"
 msgid "Feature grid with icons"
@@ -703,6 +758,8 @@ msgid "Portfolio"
 msgstr ""
 
 #: patterns/footer.php:71
+#: patterns/stats-inline.php:25
+#: patterns/team-dark.php:54
 msgid "Team members"
 msgstr ""
 
@@ -757,6 +814,7 @@ msgstr ""
 
 #: patterns/hero-centered.php:30
 #: patterns/media-text.php:54
+#: patterns/process-split.php:77
 msgid "Start a project"
 msgstr ""
 
@@ -810,11 +868,6 @@ msgstr ""
 
 #: patterns/media-text.php:17
 msgid "Everything we build belongs to you"
-msgstr ""
-
-#: patterns/media-text.php:31
-#: patterns/page-header.php:18
-msgid "About us"
 msgstr ""
 
 #: patterns/media-text.php:35
@@ -965,6 +1018,29 @@ msgstr ""
 msgid "View all posts"
 msgstr ""
 
+#: patterns/posts-latest.php
+msgctxt "Pattern title"
+msgid "Latest articles in two large cards"
+msgstr ""
+
+#: patterns/posts-latest.php
+msgctxt "Pattern description"
+msgid "An eyebrow, heading and archive link beside each other, above the two newest posts as large cards with the category shown on the image."
+msgstr ""
+
+#: patterns/posts-latest.php:23
+msgid "Our latest articles"
+msgstr ""
+
+#: patterns/posts-latest.php:29
+#: patterns/team-dark.php:64
+msgid "View all"
+msgstr ""
+
+#: patterns/posts-latest.php:45
+msgid "Read more"
+msgstr ""
+
 #: patterns/posts-two-column.php
 msgctxt "Pattern title"
 msgid "Posts in two columns with excerpts"
@@ -1079,6 +1155,65 @@ msgstr ""
 msgid "Choose plan"
 msgstr ""
 
+#: patterns/process-split.php
+msgctxt "Pattern title"
+msgid "Work process beside an image"
+msgstr ""
+
+#: patterns/process-split.php
+msgctxt "Pattern description"
+msgid "A centred section heading over numbered steps on one side and a supporting image on the other, for explaining how you work. Each step opens and closes, and opening one closes the rest."
+msgstr ""
+
+#: patterns/process-split.php:16
+msgid "1"
+msgstr ""
+
+#: patterns/process-split.php:17
+msgid "Submit a proposal for your awesome project."
+msgstr ""
+
+#: patterns/process-split.php:18
+msgid "Tell us what you are trying to build and who it is for. A short note is enough to start the conversation, and we will come back to you with questions rather than a quote."
+msgstr ""
+
+#: patterns/process-split.php:21
+msgid "2"
+msgstr ""
+
+#: patterns/process-split.php:22
+msgid "Our expert developer team is ready to do all."
+msgstr ""
+
+#: patterns/process-split.php:23
+msgid "You get a written scope, a fixed timeline and one person who stays with the project from the first call through to the last deployment."
+msgstr ""
+
+#: patterns/process-split.php:26
+msgid "3"
+msgstr ""
+
+#: patterns/process-split.php:27
+msgid "Get full support from us through the project."
+msgstr ""
+
+#: patterns/process-split.php:28
+msgid "Updates as we go, no surprises at handover, and someone to write to long after the site has launched."
+msgstr ""
+
+#: patterns/process-split.php:38
+msgid "Work process"
+msgstr ""
+
+#: patterns/process-split.php:42
+#: patterns/process.php:41
+msgid "How we work"
+msgstr ""
+
+#: patterns/process-split.php:69
+msgid "Get started"
+msgstr ""
+
 #: patterns/process.php
 msgctxt "Pattern title"
 msgid "Numbered process steps"
@@ -1138,10 +1273,6 @@ msgstr ""
 
 #: patterns/process.php:33
 msgid "We ship it, watch it settle, and stay available for the changes that follow."
-msgstr ""
-
-#: patterns/process.php:41
-msgid "How we work"
 msgstr ""
 
 #: patterns/process.php:45
@@ -1259,11 +1390,13 @@ msgid "&#8220;They treated our budget like it was their own money. That is the p
 msgstr ""
 
 #: patterns/quote.php:22
+#: patterns/testimonials-rated.php:17
 #: patterns/testimonials.php:17
 msgid "Priya Raman"
 msgstr ""
 
 #: patterns/quote.php:26
+#: patterns/testimonials-rated.php:18
 #: patterns/testimonials.php:18
 msgid "Operations Lead, Northwind"
 msgstr ""
@@ -1436,6 +1569,44 @@ msgstr ""
 msgid "Notes on what we are building, roughly once a week."
 msgstr ""
 
+#: patterns/stats-inline.php
+msgctxt "Pattern title"
+msgid "Statistics row between rules"
+msgstr ""
+
+#: patterns/stats-inline.php
+msgctxt "Pattern description"
+msgid "Four large figures with short labels in a single row, held between two hairline rules, for milestones on a light section."
+msgstr ""
+
+#: patterns/stats-inline.php:16
+msgid "10+"
+msgstr ""
+
+#: patterns/stats-inline.php:17
+msgid "Years of experience"
+msgstr ""
+
+#: patterns/stats-inline.php:20
+msgid "230+"
+msgstr ""
+
+#: patterns/stats-inline.php:21
+msgid "Active customers"
+msgstr ""
+
+#: patterns/stats-inline.php:24
+msgid "60+"
+msgstr ""
+
+#: patterns/stats-inline.php:28
+msgid "500+"
+msgstr ""
+
+#: patterns/stats-inline.php:29
+msgid "Companies trusted us"
+msgstr ""
+
 #: patterns/stats.php
 msgctxt "Pattern title"
 msgid "Statistics band"
@@ -1478,6 +1649,92 @@ msgstr ""
 msgid "People on the team"
 msgstr ""
 
+#: patterns/team-dark.php
+msgctxt "Pattern title"
+msgid "Team on a dark band"
+msgstr ""
+
+#: patterns/team-dark.php
+msgctxt "Pattern description"
+msgid "Eight team cards in two rows on a full width dark band, with an eyebrow, heading and a link to the full team. Replace each tinted placeholder with a photo."
+msgstr ""
+
+#: patterns/team-dark.php:16
+#: patterns/team.php:16
+msgid "Farhana Rahman"
+msgstr ""
+
+#: patterns/team-dark.php:17
+#: patterns/team.php:17
+msgid "Founder"
+msgstr ""
+
+#: patterns/team-dark.php:20
+#: patterns/team.php:20
+msgid "Daniel Okonkwo"
+msgstr ""
+
+#: patterns/team-dark.php:21
+#: patterns/team.php:21
+msgid "Engineering Lead"
+msgstr ""
+
+#: patterns/team-dark.php:24
+#: patterns/team.php:24
+msgid "Mei Tanaka"
+msgstr ""
+
+#: patterns/team-dark.php:25
+#: patterns/team.php:25
+msgid "Design Lead"
+msgstr ""
+
+#: patterns/team-dark.php:28
+#: patterns/team.php:28
+msgid "Iwan Sadowski"
+msgstr ""
+
+#: patterns/team-dark.php:29
+#: patterns/team.php:29
+msgid "Support Lead"
+msgstr ""
+
+#: patterns/team-dark.php:32
+msgid "Noor Haddad"
+msgstr ""
+
+#: patterns/team-dark.php:33
+msgid "Product Designer"
+msgstr ""
+
+#: patterns/team-dark.php:36
+msgid "Tomas Ferreira"
+msgstr ""
+
+#: patterns/team-dark.php:37
+msgid "Back End Developer"
+msgstr ""
+
+#: patterns/team-dark.php:40
+msgid "Chidera Eze"
+msgstr ""
+
+#: patterns/team-dark.php:41
+msgid "Accessibility Specialist"
+msgstr ""
+
+#: patterns/team-dark.php:44
+msgid "Hanna Virtanen"
+msgstr ""
+
+#: patterns/team-dark.php:45
+msgid "Account Manager"
+msgstr ""
+
+#: patterns/team-dark.php:58
+msgid "Meet our expert team"
+msgstr ""
+
 #: patterns/team.php
 msgctxt "Pattern title"
 msgid "Team members in four columns"
@@ -1488,44 +1745,64 @@ msgctxt "Pattern description"
 msgid "Four team cards, each with a portrait slot, a name and a role. Replace the tinted placeholder with a photo."
 msgstr ""
 
-#: patterns/team.php:16
-msgid "Farhana Rahman"
-msgstr ""
-
-#: patterns/team.php:17
-msgid "Founder"
-msgstr ""
-
-#: patterns/team.php:20
-msgid "Daniel Okonkwo"
-msgstr ""
-
-#: patterns/team.php:21
-msgid "Engineering Lead"
-msgstr ""
-
-#: patterns/team.php:24
-msgid "Mei Tanaka"
-msgstr ""
-
-#: patterns/team.php:25
-msgid "Design Lead"
-msgstr ""
-
-#: patterns/team.php:28
-msgid "Iwan Sadowski"
-msgstr ""
-
-#: patterns/team.php:29
-msgid "Support Lead"
-msgstr ""
-
 #: patterns/team.php:37
 msgid "Our team"
 msgstr ""
 
 #: patterns/team.php:41
 msgid "Meet the experts"
+msgstr ""
+
+#: patterns/testimonials-rated.php
+msgctxt "Pattern title"
+msgid "Client stories with ratings"
+msgstr ""
+
+#: patterns/testimonials-rated.php
+msgctxt "Pattern description"
+msgid "A centred section heading above three borderless quotes, each with a five star rating and the name, role and portrait of the person who gave it."
+msgstr ""
+
+#: patterns/testimonials-rated.php:16
+msgid "“They asked better questions than anyone else we spoke to, and the build reflected that. We launched a fortnight early and nothing has broken since.”"
+msgstr ""
+
+#: patterns/testimonials-rated.php:21
+msgid "“It was worth every penny. The site is the most valuable thing our marketing team owns, and we can edit all of it ourselves.”"
+msgstr ""
+
+#: patterns/testimonials-rated.php:22
+msgid "Wade Warren"
+msgstr ""
+
+#: patterns/testimonials-rated.php:23
+msgid "Director, ABC Corporation"
+msgstr ""
+
+#: patterns/testimonials-rated.php:26
+msgid "“Six months after launch they still answer within the day. The support is the part we ended up valuing most.”"
+msgstr ""
+
+#: patterns/testimonials-rated.php:27
+#: patterns/testimonials.php:27
+msgid "Amara Okafor"
+msgstr ""
+
+#: patterns/testimonials-rated.php:28
+#: patterns/testimonials.php:28
+msgid "Marketing Director, Baseline"
+msgstr ""
+
+#: patterns/testimonials-rated.php:36
+msgid "Testimonial"
+msgstr ""
+
+#: patterns/testimonials-rated.php:40
+msgid "Our client stories"
+msgstr ""
+
+#: patterns/testimonials-rated.php:49
+msgid "Rated 5 out of 5"
 msgstr ""
 
 #: patterns/testimonials.php
@@ -1556,14 +1833,6 @@ msgstr ""
 
 #: patterns/testimonials.php:26
 msgid "Six months after launch they still answer within the day. The support is the part we value most."
-msgstr ""
-
-#: patterns/testimonials.php:27
-msgid "Amara Okafor"
-msgstr ""
-
-#: patterns/testimonials.php:28
-msgid "Marketing Director, Baseline"
 msgstr ""
 
 #: patterns/testimonials.php:36
@@ -1900,11 +2169,13 @@ msgid "Uppercase trail"
 msgstr ""
 
 #: styles/blocks/button-arrow.json
+#: styles/blocks/read-more-arrow.json
 msgctxt "Style variation name"
 msgid "Arrow"
 msgstr ""
 
 #: styles/blocks/button-chip.json
+#: styles/blocks/post-terms-chip.json
 msgctxt "Style variation name"
 msgid "Chip"
 msgstr ""
@@ -1922,6 +2193,11 @@ msgstr ""
 #: styles/blocks/column-product-gallery-surface.json
 msgctxt "Style variation name"
 msgid "Product gallery surface"
+msgstr ""
+
+#: styles/blocks/details-step.json
+msgctxt "Style variation name"
+msgid "Accordion step"
 msgstr ""
 
 #: styles/blocks/group-catalog-toolbar.json
@@ -1942,6 +2218,11 @@ msgstr ""
 #: styles/blocks/group-newsletter-underline.json
 msgctxt "Style variation name"
 msgid "Newsletter underline"
+msgstr ""
+
+#: styles/blocks/group-process-step.json
+msgctxt "Style variation name"
+msgid "Step with connector"
 msgstr ""
 
 #: styles/blocks/group-product-card-actions.json
@@ -1967,6 +2248,16 @@ msgstr ""
 #: styles/blocks/paragraph-arrow-link.json
 msgctxt "Style variation name"
 msgid "Arrow link"
+msgstr ""
+
+#: styles/blocks/paragraph-counter.json
+msgctxt "Style variation name"
+msgid "Counting figure"
+msgstr ""
+
+#: styles/blocks/paragraph-rating.json
+msgctxt "Style variation name"
+msgid "Rating stars"
 msgstr ""
 
 #: styles/blocks/product-collection-cards.json

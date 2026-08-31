@@ -1,0 +1,10 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Chip",
+	"slug": "chip",
+	"blockTypes": [ "core/post-terms" ],
+	"styles": {
+		"css": "&{display:inline-block}\n& a{text-decoration:none}\n& a:hover{text-decoration:underline}"
+	}
+}
