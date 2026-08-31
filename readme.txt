@@ -76,6 +76,14 @@ License URI: https://creativecommons.org/publicdomain/zero/1.0/
 Source: https://stocksnap.io/photo/home-office-QUU0AQABSN
 Found via Openverse. Resized and converted to WebP for this theme.
 
+Bundled image (assets/images/logo-light.webp)
+Pluginize Lab logo, light variant, used in the footer.
+This is a placeholder for demonstration and MUST be removed or replaced before
+distribution: it is a third-party brand mark, not GPL-licensed theme artwork.
+Replacing it with a neutral placeholder also restores the footer logo slot to
+the Site Editor, since the footer currently references this file directly
+instead of the user's own Site Identity logo.
+
 == Changelog ==
 
 = 1.0.0 =
