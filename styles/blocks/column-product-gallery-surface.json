@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Product gallery surface",
+	"slug": "product-gallery-surface",
+	"blockTypes": [
+		"core/column"
+	],
+	"styles": {
+		"css": "& .wp-block-woocommerce-product-image-gallery{display:flow-root;overflow:hidden;border-radius:12px;background-color:var(--wp--preset--color--light-bg)}\n& .woocommerce-product-gallery__wrapper{margin:0}\n& .woocommerce-product-gallery__image img{display:block;inline-size:100%}\n& .flex-control-thumbs img{border-radius:8px}"
+	}
+}

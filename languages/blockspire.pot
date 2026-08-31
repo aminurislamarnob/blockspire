@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-08-31T07:12:05+00:00\n"
+"POT-Creation-Date: 2026-08-31T09:46:20+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: blockspire\n"
@@ -324,6 +324,52 @@ msgctxt "Pattern description"
 msgid "A single row of post date, author and categories."
 msgstr ""
 
+#: patterns/product-archive-hero.php
+msgctxt "Pattern title"
+msgid "Shop hero"
+msgstr ""
+
+#: patterns/product-archive-hero.php
+msgctxt "Pattern description"
+msgid "A rounded dark banner carrying the archive title above a centred breadcrumb trail."
+msgstr ""
+
+#: patterns/product-card.php
+msgctxt "Pattern title"
+msgid "Product card"
+msgstr ""
+
+#: patterns/product-card.php
+msgctxt "Pattern description"
+msgid "The inside of one product card: square image, centred title, category eyebrow and a split price and add to cart row."
+msgstr ""
+
+#: patterns/product-filters.php
+msgctxt "Pattern title"
+msgid "Shop filters"
+msgstr ""
+
+#: patterns/product-filters.php
+msgctxt "Pattern description"
+msgid "The catalog sidebar: a price slider, category checkboxes, colour options and stock status."
+msgstr ""
+
+#: patterns/product-filters.php:24
+msgid "Filter by price"
+msgstr ""
+
+#: patterns/product-filters.php:34
+msgid "Filter by category"
+msgstr ""
+
+#: patterns/product-filters.php:44
+msgid "Filter by colour"
+msgstr ""
+
+#: patterns/product-filters.php:54
+msgid "Availability"
+msgstr ""
+
 #: patterns/product-grid.php
 msgctxt "Pattern title"
 msgid "Product grid"
@@ -334,7 +380,7 @@ msgctxt "Pattern description"
 msgid "The catalog toolbar above a three column product grid, with pagination and an empty state."
 msgstr ""
 
-#: patterns/product-grid.php:44
+#: patterns/product-grid.php:36
 msgid "No products matched your selection. Try a different filter, or browse the whole shop."
 msgstr ""
 
@@ -353,7 +399,7 @@ msgid "SKU:"
 msgstr ""
 
 #: patterns/product-meta.php:19
-msgid "Categories: "
+msgid "Category: "
 msgstr ""
 
 #: patterns/product-meta.php:21
@@ -749,6 +795,16 @@ msgctxt "Custom template name"
 msgid "Blank canvas"
 msgstr ""
 
+#: styles/blocks/breadcrumbs-caps-center.json
+msgctxt "Style variation name"
+msgid "Uppercase trail, centred"
+msgstr ""
+
+#: styles/blocks/breadcrumbs-caps.json
+msgctxt "Style variation name"
+msgid "Uppercase trail"
+msgstr ""
+
 #: styles/blocks/button-arrow.json
 msgctxt "Style variation name"
 msgid "Arrow"
@@ -769,6 +825,16 @@ msgctxt "Style variation name"
 msgid "Rounded"
 msgstr ""
 
+#: styles/blocks/column-product-gallery-surface.json
+msgctxt "Style variation name"
+msgid "Product gallery surface"
+msgstr ""
+
+#: styles/blocks/group-catalog-toolbar.json
+msgctxt "Style variation name"
+msgid "Catalog toolbar"
+msgstr ""
+
 #: styles/blocks/group-hero-grid.json
 msgctxt "Style variation name"
 msgid "Hero grid"
@@ -784,6 +850,16 @@ msgctxt "Style variation name"
 msgid "Newsletter underline"
 msgstr ""
 
+#: styles/blocks/group-product-card-actions.json
+msgctxt "Style variation name"
+msgid "Product card actions"
+msgstr ""
+
+#: styles/blocks/group-product-meta.json
+msgctxt "Style variation name"
+msgid "Product meta"
+msgstr ""
+
 #: styles/blocks/navigation-bulleted.json
 msgctxt "Style variation name"
 msgid "Bulleted"
@@ -797,6 +873,11 @@ msgstr ""
 #: styles/blocks/paragraph-arrow-link.json
 msgctxt "Style variation name"
 msgid "Arrow link"
+msgstr ""
+
+#: styles/blocks/product-collection-cards.json
+msgctxt "Style variation name"
+msgid "Product cards"
 msgstr ""
 
 #: styles/midnight.json

@@ -38,6 +38,15 @@ results, cart, checkout and the order confirmation. Product categories, tags and
 brands reuse the shop archive, so editing "Product Catalog" in the Site Editor
 covers all of them.
 
+The shop opens with a rounded banner carrying the archive title and breadcrumb,
+then a filter sidebar (price, category, colour and stock) beside a three column
+grid of product cards. Each card is a square image with a sale chip, the product
+title, its category, and a split row holding the price and add to cart. The same
+card is used for related products on a single product page, so the two match.
+
+If your store has no colour attribute the colour filter is left out rather than
+rendered empty.
+
 Checkout and the order confirmation use the minimal header and footer so there is
 nothing to click away from at the point of purchase. A cart icon appears in the
 main header only while WooCommerce is active.
