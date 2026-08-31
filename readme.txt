@@ -55,22 +55,13 @@ License: SIL Open Font License, 1.1
 License URI: https://scripts.sil.org/OFL
 Source: https://fonts.google.com/specimen/Poppins
 
-Service icons and decorative graphics (assets/images/icon-*.svg, band-decoration.svg, dot-grid.svg)
+Service icons, decorative graphics and the arrow icons embedded as data URIs in
+styles/blocks/button-arrow.json, button-outline-arrow.json, button-chip.json,
+group-newsletter-underline.json and group-newsletter-boxed.json
+(assets/images/icon-*.svg, band-decoration.svg, dot-grid.svg)
 Copyright 2026 Aminur Islam Arnob
 License: GNU General Public License v2.0 or later
 Original work created for this theme.
-
-Arrow icon "arrow_outward" from Material Symbols, embedded as a data URI in styles/blocks/button-arrow.json
-Copyright Google LLC
-License: Apache License 2.0
-License URI: https://www.apache.org/licenses/LICENSE-2.0
-Source: https://fonts.google.com/icons
-
-Arrow icon "ArrowUpRight" from Phosphor Icons, embedded as a data URI in styles/blocks/group-newsletter-boxed.json
-Copyright 2023 Phosphor Icons
-License: MIT License
-License URI: https://github.com/phosphor-icons/core/blob/main/LICENSE
-Source: https://phosphoricons.com/
 
 Arrow icon "arrow-right" from Feather Icons, embedded as a data URI in styles/blocks/paragraph-arrow-link.json
 Copyright 2013-2023 Cole Bemis
