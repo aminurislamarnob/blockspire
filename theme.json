@@ -370,7 +370,7 @@
 		}
 	},
 	"styles": {
-		"css": ":where(a:not(.wp-element-button),.wp-element-button,.wp-block-button__link,input,button,textarea,select):focus{outline:none}\n:where(.wp-element-button,.wp-block-button__link,a:not(.wp-element-button)):focus-visible{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:0.25em}",
+		"css": ":where(a:not(.wp-element-button),.wp-element-button,.wp-block-button__link,input,button,textarea,select):focus{outline:none}\n:where(.wp-element-button,.wp-block-button__link,a:not(.wp-element-button)):focus-visible{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:0.25em}\n.woocommerce .wp-block-woocommerce-product-image-gallery span.onsale{min-block-size:0;min-inline-size:0;inset-block-start:12px;inset-inline:12px auto;border-radius:100px;padding-block:2px;padding-inline:12px;background-color:var(--wp--preset--color--primary);color:var(--wp--preset--color--text-white);font-size:var(--wp--preset--font-size--small-paragraph);font-weight:500;line-height:var(--wp--custom--line-height--paragraph-small)}\n:is(.woocommerce-cart,.woocommerce-checkout,.woocommerce-account) .wp-block-post-title.alignwide{max-width:var(--wp--style--global--wide-size)}",
 		"color": {
 			"background": "var(--wp--preset--color--main-bg)",
 			"text": "var(--wp--preset--color--text-color)"
@@ -512,6 +512,23 @@
 					"text": "var(--wp--preset--color--link-color)"
 				},
 				"css": "& .current-menu-item > .wp-block-navigation-item__content{text-decoration:underline;text-underline-offset:0.2em}"
+			},
+			"woocommerce/product-image": {
+				"css": "& img{border-radius:8px}"
+			},
+			"woocommerce/product-sale-badge": {
+				"css": "&{border:0;border-radius:100px;background-color:var(--wp--preset--color--primary);color:var(--wp--preset--color--text-white);font-size:var(--wp--preset--font-size--small-paragraph);font-weight:500;line-height:var(--wp--custom--line-height--paragraph-small);padding-block:2px;padding-inline:12px}"
+			},
+			"woocommerce/product-price": {
+				"css": "& del{color:var(--wp--preset--color--gray-02);font-weight:400}"
+			},
+			"woocommerce/breadcrumbs": {
+				"css": "& a{text-decoration:none}"
+			},
+			"woocommerce/product-template": {
+				"spacing": {
+					"blockGap": "40px"
+				}
 			}
 		}
 	},
