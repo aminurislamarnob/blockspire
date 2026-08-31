@@ -522,9 +522,63 @@
 			"area": "header"
 		},
 		{
+			"name": "header-minimal",
+			"title": "Header (minimal)",
+			"area": "header"
+		},
+		{
 			"name": "footer",
 			"title": "Footer",
 			"area": "footer"
+		},
+		{
+			"name": "footer-minimal",
+			"title": "Footer (minimal)",
+			"area": "footer"
+		},
+		{
+			"name": "sidebar",
+			"title": "Sidebar",
+			"area": "uncategorized"
+		}
+	],
+	"customTemplates": [
+		{
+			"name": "page-no-title",
+			"title": "Page without title",
+			"postTypes": [
+				"page"
+			]
+		},
+		{
+			"name": "page-with-sidebar",
+			"title": "Page with sidebar",
+			"postTypes": [
+				"page"
+			]
+		},
+		{
+			"name": "single-with-sidebar",
+			"title": "Post with sidebar",
+			"postTypes": [
+				"post"
+			]
+		},
+		{
+			"name": "focused",
+			"title": "Focused (minimal chrome)",
+			"postTypes": [
+				"page",
+				"post"
+			]
+		},
+		{
+			"name": "blank",
+			"title": "Blank canvas",
+			"postTypes": [
+				"page",
+				"post"
+			]
 		}
 	]
 }
