@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-08-31T09:46:20+00:00\n"
+"POT-Creation-Date: 2026-08-31T10:47:57+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: blockspire\n"
@@ -87,6 +87,10 @@ msgstr ""
 msgid "Blockspire: Shop"
 msgstr ""
 
+#: functions.php:110
+msgid "Scroll back to top"
+msgstr ""
+
 #: patterns/404.php
 msgctxt "Pattern title"
 msgid "404 content"
@@ -136,6 +140,7 @@ msgstr ""
 
 #: patterns/blog-heading.php:17
 #: patterns/footer.php:61
+#: patterns/posts-grid.php:19
 msgid "Blog"
 msgstr ""
 
@@ -151,6 +156,61 @@ msgstr ""
 #: patterns/comments.php
 msgctxt "Pattern description"
 msgid "The comment list, pagination and reply form for a single entry."
+msgstr ""
+
+#: patterns/contact-details.php
+msgctxt "Pattern title"
+msgid "Contact details in three columns"
+msgstr ""
+
+#: patterns/contact-details.php
+msgctxt "Pattern description"
+msgid "Three cards carrying an address, a phone number and an email address, above a line inviting people to get in touch."
+msgstr ""
+
+#: patterns/contact-details.php:17
+msgid "Visit us"
+msgstr ""
+
+#: patterns/contact-details.php:19
+msgid "18 Fitzroy Street"
+msgstr ""
+
+#: patterns/contact-details.php:20
+msgid "London W1T 4BQ"
+msgstr ""
+
+#: patterns/contact-details.php:25
+msgid "Call us"
+msgstr ""
+
+#: patterns/contact-details.php:27
+msgid "+1 555 000 0000"
+msgstr ""
+
+#: patterns/contact-details.php:28
+msgid "Weekdays, 9am to 6pm"
+msgstr ""
+
+#: patterns/contact-details.php:33
+msgid "Email us"
+msgstr ""
+
+#: patterns/contact-details.php:35
+msgid "hello@example.com"
+msgstr ""
+
+#: patterns/contact-details.php:36
+msgid "We reply within one working day"
+msgstr ""
+
+#: patterns/contact-details.php:45
+#: patterns/footer.php:63
+msgid "Contact"
+msgstr ""
+
+#: patterns/contact-details.php:49
+msgid "Tell us what you need"
 msgstr ""
 
 #: patterns/cta.php
@@ -170,6 +230,140 @@ msgstr ""
 
 #: patterns/cta.php:43
 msgid "Start a Project"
+msgstr ""
+
+#: patterns/faq.php
+msgctxt "Pattern title"
+msgid "Frequently asked questions"
+msgstr ""
+
+#: patterns/faq.php
+msgctxt "Pattern description"
+msgid "A stack of expandable questions and answers built on the Details block, so it works without any JavaScript."
+msgstr ""
+
+#: patterns/faq.php:16
+msgid "How long does a project usually take?"
+msgstr ""
+
+#: patterns/faq.php:17
+msgid "Most sites take six to ten weeks from the first conversation to launch. We give you a dated plan before any work starts, and tell you early if anything threatens it."
+msgstr ""
+
+#: patterns/faq.php:20
+msgid "What do you need from us to begin?"
+msgstr ""
+
+#: patterns/faq.php:21
+msgid "An idea of what the site has to achieve, whatever brand material you already have, and one person on your side who can make decisions. We handle the rest."
+msgstr ""
+
+#: patterns/faq.php:24
+msgid "Can you work with our existing site?"
+msgstr ""
+
+#: patterns/faq.php:25
+msgid "Often, yes. We start with a short audit and tell you honestly whether improving what you have is better value than starting again."
+msgstr ""
+
+#: patterns/faq.php:28
+msgid "What happens after launch?"
+msgstr ""
+
+#: patterns/faq.php:29
+msgid "You own everything we build. We offer ongoing care plans if you want them, but you are never locked in and you can take the site elsewhere at any point."
+msgstr ""
+
+#: patterns/faq.php:37
+msgid "FAQ"
+msgstr ""
+
+#: patterns/faq.php:41
+msgid "Questions we hear often"
+msgstr ""
+
+#: patterns/feature-highlight.php
+msgctxt "Pattern title"
+msgid "Feature highlight band"
+msgstr ""
+
+#: patterns/feature-highlight.php
+msgctxt "Pattern description"
+msgid "A single wide tinted card carrying one promise: an icon, a short title and a paragraph of supporting detail."
+msgstr ""
+
+#: patterns/feature-highlight.php:25
+msgid "Our promise"
+msgstr ""
+
+#: patterns/feature-highlight.php:29
+msgid "Every project is handled with discipline, honest communication and a commitment to doing the job properly. We make sure your investment is protected and your expectations are met, and if anything is not right we say so early and put it right."
+msgstr ""
+
+#: patterns/features.php
+msgctxt "Pattern title"
+msgid "Feature grid with icons"
+msgstr ""
+
+#: patterns/features.php
+msgctxt "Pattern description"
+msgid "A centred section heading above two columns of feature blocks, each with an icon badge, a title and a short paragraph."
+msgstr ""
+
+#: patterns/features.php:17
+msgid "Proven experience"
+msgstr ""
+
+#: patterns/features.php:18
+msgid "Backed by years of practice, we deliver reliable, high quality work tailored to your business."
+msgstr ""
+
+#: patterns/features.php:22
+msgid "Business focused"
+msgstr ""
+
+#: patterns/features.php:23
+msgid "Every business is different, so is our approach. We build software that fits how you already work."
+msgstr ""
+
+#: patterns/features.php:27
+msgid "Built with care"
+msgstr ""
+
+#: patterns/features.php:28
+msgid "We go beyond the brief, understanding your goals and shipping solutions that hold up over time."
+msgstr ""
+
+#: patterns/features.php:32
+msgid "No surprises"
+msgstr ""
+
+#: patterns/features.php:33
+msgid "Transparent pricing and a clear scope from the first conversation. Your investment is always protected."
+msgstr ""
+
+#: patterns/features.php:37
+msgid "Ongoing support"
+msgstr ""
+
+#: patterns/features.php:38
+msgid "Our work does not end at launch. We stay on hand to keep your site secure and performing well."
+msgstr ""
+
+#: patterns/features.php:42
+msgid "Modern by default"
+msgstr ""
+
+#: patterns/features.php:43
+msgid "We use current, well supported technology so your site stays maintainable as your business grows."
+msgstr ""
+
+#: patterns/features.php:51
+msgid "Why businesses choose us"
+msgstr ""
+
+#: patterns/features.php:55
+msgid "Partner with a team that blends experience, care and plain speaking to turn your ideas into working software."
 msgstr ""
 
 #: patterns/footer-minimal.php
@@ -236,10 +430,6 @@ msgstr ""
 msgid "Services"
 msgstr ""
 
-#: patterns/footer.php:63
-msgid "Contact"
-msgstr ""
-
 #: patterns/footer.php:69
 msgid "Portfolio"
 msgstr ""
@@ -249,6 +439,7 @@ msgid "Team members"
 msgstr ""
 
 #: patterns/footer.php:73
+#: patterns/pricing.php:59
 msgid "Pricing"
 msgstr ""
 
@@ -272,6 +463,37 @@ msgstr ""
 
 #: patterns/header.php:31
 msgid "Start A Project"
+msgstr ""
+
+#: patterns/hero-centered.php
+msgctxt "Pattern title"
+msgid "Centred hero with two buttons"
+msgstr ""
+
+#: patterns/hero-centered.php
+msgctxt "Pattern description"
+msgid "A short centred hero: an eyebrow, a large display heading, one paragraph and a pair of buttons, over the grid backdrop."
+msgstr ""
+
+#: patterns/hero-centered.php:17
+msgid "Software studio"
+msgstr ""
+
+#: patterns/hero-centered.php:21
+msgid "Built properly, delivered on time"
+msgstr ""
+
+#: patterns/hero-centered.php:25
+msgid "We design and build websites and web applications for businesses that need the result to work, not just to look good in a screenshot."
+msgstr ""
+
+#: patterns/hero-centered.php:30
+#: patterns/media-text.php:54
+msgid "Start a project"
+msgstr ""
+
+#: patterns/hero-centered.php:34
+msgid "See our work"
 msgstr ""
 
 #: patterns/hero.php
@@ -300,6 +522,40 @@ msgstr ""
 msgid "A tidy desk with a monitor, keyboard and mouse beside a window"
 msgstr ""
 
+#: patterns/media-text.php
+msgctxt "Pattern title"
+msgid "Image beside text"
+msgstr ""
+
+#: patterns/media-text.php
+msgctxt "Pattern description"
+msgid "A rounded image on one side and an eyebrow, heading, paragraph, checklist and button on the other."
+msgstr ""
+
+#: patterns/media-text.php:15
+msgid "A written scope before any work begins"
+msgstr ""
+
+#: patterns/media-text.php:16
+msgid "One person who knows your account"
+msgstr ""
+
+#: patterns/media-text.php:17
+msgid "Everything we build belongs to you"
+msgstr ""
+
+#: patterns/media-text.php:31
+msgid "About us"
+msgstr ""
+
+#: patterns/media-text.php:35
+msgid "Partner with us to accelerate growth"
+msgstr ""
+
+#: patterns/media-text.php:39
+msgid "We are a small team that has been building for the web long enough to know which shortcuts cost more than they save. You get the same people from the first call to the last deployment."
+msgstr ""
+
 #: patterns/no-results.php
 msgctxt "Pattern title"
 msgid "No results"
@@ -322,6 +578,194 @@ msgstr ""
 #: patterns/post-meta.php
 msgctxt "Pattern description"
 msgid "A single row of post date, author and categories."
+msgstr ""
+
+#: patterns/posts-grid.php
+msgctxt "Pattern title"
+msgid "Latest posts in three columns"
+msgstr ""
+
+#: patterns/posts-grid.php
+msgctxt "Pattern description"
+msgid "A section heading beside a link to the blog, above three of the most recent posts with featured images."
+msgstr ""
+
+#: patterns/posts-grid.php:23
+msgid "Latest articles"
+msgstr ""
+
+#: patterns/posts-grid.php:28
+msgid "View all posts"
+msgstr ""
+
+#: patterns/pricing.php
+msgctxt "Pattern title"
+msgid "Pricing plans in three columns"
+msgstr ""
+
+#: patterns/pricing.php
+msgctxt "Pattern description"
+msgid "Three plan cards with a price, a short summary, a feature list and a call to action, with the middle plan emphasised."
+msgstr ""
+
+#: patterns/pricing.php:16
+msgid "Starter"
+msgstr ""
+
+#: patterns/pricing.php:17
+msgid "$29"
+msgstr ""
+
+#: patterns/pricing.php:18
+#: patterns/pricing.php:30
+#: patterns/pricing.php:43
+msgid "per month"
+msgstr ""
+
+#: patterns/pricing.php:19
+msgid "For a small site that needs to stay current and secure."
+msgstr ""
+
+#: patterns/pricing.php:21
+msgid "Monthly updates and backups"
+msgstr ""
+
+#: patterns/pricing.php:22
+msgid "Uptime monitoring"
+msgstr ""
+
+#: patterns/pricing.php:23
+msgid "Email support"
+msgstr ""
+
+#: patterns/pricing.php:28
+msgid "Growth"
+msgstr ""
+
+#: patterns/pricing.php:29
+msgid "$79"
+msgstr ""
+
+#: patterns/pricing.php:31
+msgid "For a growing business that ships changes regularly."
+msgstr ""
+
+#: patterns/pricing.php:33
+msgid "Everything in Starter"
+msgstr ""
+
+#: patterns/pricing.php:34
+msgid "Two hours of changes a month"
+msgstr ""
+
+#: patterns/pricing.php:35
+msgid "Performance reviews"
+msgstr ""
+
+#: patterns/pricing.php:36
+msgid "Priority support"
+msgstr ""
+
+#: patterns/pricing.php:41
+msgid "Scale"
+msgstr ""
+
+#: patterns/pricing.php:42
+msgid "$199"
+msgstr ""
+
+#: patterns/pricing.php:44
+msgid "For a busy store or platform where downtime costs money."
+msgstr ""
+
+#: patterns/pricing.php:46
+msgid "Everything in Growth"
+msgstr ""
+
+#: patterns/pricing.php:47
+msgid "Eight hours of changes a month"
+msgstr ""
+
+#: patterns/pricing.php:48
+msgid "Staging environment"
+msgstr ""
+
+#: patterns/pricing.php:49
+msgid "Same day response"
+msgstr ""
+
+#: patterns/pricing.php:63
+msgid "Plans that stay honest"
+msgstr ""
+
+#: patterns/pricing.php:107
+msgid "Choose plan"
+msgstr ""
+
+#: patterns/process.php
+msgctxt "Pattern title"
+msgid "Numbered process steps"
+msgstr ""
+
+#: patterns/process.php
+msgctxt "Pattern description"
+msgid "Four numbered steps explaining how you work, from first conversation through to launch and support."
+msgstr ""
+
+#: patterns/process.php:16
+msgid "01"
+msgstr ""
+
+#: patterns/process.php:17
+msgid "Discover"
+msgstr ""
+
+#: patterns/process.php:18
+msgid "We start by listening. What the business needs, who it serves and what success actually looks like."
+msgstr ""
+
+#: patterns/process.php:21
+msgid "02"
+msgstr ""
+
+#: patterns/process.php:22
+msgid "Plan"
+msgstr ""
+
+#: patterns/process.php:23
+msgid "A clear scope, a realistic timeline and a written estimate, agreed before any code is written."
+msgstr ""
+
+#: patterns/process.php:26
+msgid "03"
+msgstr ""
+
+#: patterns/process.php:27
+msgid "Build"
+msgstr ""
+
+#: patterns/process.php:28
+msgid "Short cycles with something to look at each time, so you are never waiting in the dark."
+msgstr ""
+
+#: patterns/process.php:31
+msgid "04"
+msgstr ""
+
+#: patterns/process.php:32
+msgid "Launch and support"
+msgstr ""
+
+#: patterns/process.php:33
+msgid "We ship it, watch it settle, and stay available for the changes that follow."
+msgstr ""
+
+#: patterns/process.php:41
+msgid "How we work"
+msgstr ""
+
+#: patterns/process.php:45
+msgid "A simple way of working"
 msgstr ""
 
 #: patterns/product-archive-hero.php
@@ -516,6 +960,152 @@ msgstr ""
 
 #: patterns/sidebar.php:34
 msgid "Categories"
+msgstr ""
+
+#: patterns/stats.php
+msgctxt "Pattern title"
+msgid "Statistics band"
+msgstr ""
+
+#: patterns/stats.php
+msgctxt "Pattern description"
+msgid "Four large figures with short labels on a dark band, for milestones such as clients, projects and years in business."
+msgstr ""
+
+#: patterns/stats.php:16
+msgid "520k+"
+msgstr ""
+
+#: patterns/stats.php:17
+msgid "Businesses served"
+msgstr ""
+
+#: patterns/stats.php:20
+msgid "15"
+msgstr ""
+
+#: patterns/stats.php:21
+msgid "Years in practice"
+msgstr ""
+
+#: patterns/stats.php:24
+msgid "900+"
+msgstr ""
+
+#: patterns/stats.php:25
+msgid "Projects delivered"
+msgstr ""
+
+#: patterns/stats.php:28
+msgid "140+"
+msgstr ""
+
+#: patterns/stats.php:29
+msgid "People on the team"
+msgstr ""
+
+#: patterns/team.php
+msgctxt "Pattern title"
+msgid "Team members in four columns"
+msgstr ""
+
+#: patterns/team.php
+msgctxt "Pattern description"
+msgid "Four team cards, each with a portrait slot, a name and a role. Replace the tinted placeholder with a photo."
+msgstr ""
+
+#: patterns/team.php:16
+msgid "Farhana Rahman"
+msgstr ""
+
+#: patterns/team.php:17
+msgid "Founder"
+msgstr ""
+
+#: patterns/team.php:20
+msgid "Daniel Okonkwo"
+msgstr ""
+
+#: patterns/team.php:21
+msgid "Engineering Lead"
+msgstr ""
+
+#: patterns/team.php:24
+msgid "Mei Tanaka"
+msgstr ""
+
+#: patterns/team.php:25
+msgid "Design Lead"
+msgstr ""
+
+#: patterns/team.php:28
+msgid "Iwan Sadowski"
+msgstr ""
+
+#: patterns/team.php:29
+msgid "Support Lead"
+msgstr ""
+
+#: patterns/team.php:37
+msgid "Our team"
+msgstr ""
+
+#: patterns/team.php:41
+msgid "Meet the experts"
+msgstr ""
+
+#: patterns/testimonials.php
+msgctxt "Pattern title"
+msgid "Testimonials in three columns"
+msgstr ""
+
+#: patterns/testimonials.php
+msgctxt "Pattern description"
+msgid "Three bordered quote cards, each with a short testimonial and the name and role of the person who gave it."
+msgstr ""
+
+#: patterns/testimonials.php:16
+msgid "They asked better questions than anyone else we spoke to, and the build reflected that. We launched a fortnight early."
+msgstr ""
+
+#: patterns/testimonials.php:17
+msgid "Priya Raman"
+msgstr ""
+
+#: patterns/testimonials.php:18
+msgid "Operations Lead, Northwind"
+msgstr ""
+
+#: patterns/testimonials.php:21
+msgid "The estimate held, the scope held, and nothing arrived as a surprise. That is rarer than it should be."
+msgstr ""
+
+#: patterns/testimonials.php:22
+msgid "Tomas Lindqvist"
+msgstr ""
+
+#: patterns/testimonials.php:23
+msgid "Founder, Fieldnote"
+msgstr ""
+
+#: patterns/testimonials.php:26
+msgid "Six months after launch they still answer within the day. The support is the part we value most."
+msgstr ""
+
+#: patterns/testimonials.php:27
+msgid "Amara Okafor"
+msgstr ""
+
+#: patterns/testimonials.php:28
+msgid "Marketing Director, Baseline"
+msgstr ""
+
+#: patterns/testimonials.php:36
+msgid "Testimonials"
+msgstr ""
+
+#: patterns/testimonials.php:40
+msgid "What people say"
 msgstr ""
 
 #: theme.json

@@ -66,3 +66,49 @@ if ( ! function_exists( 'blockspire_register_pattern_categories' ) ) {
 	}
 }
 add_action( 'init', 'blockspire_register_pattern_categories' );
+
+if ( ! function_exists( 'blockspire_enqueue_scripts' ) ) {
+	/**
+	 * Enqueues the scroll-back-to-top behaviour.
+	 *
+	 * The only script the theme ships. It is deferred and dependency-free; the
+	 * button it drives renders hidden, so nothing appears if this never runs.
+	 *
+	 * @since 1.0.0
+	 * @return void
+	 */
+	function blockspire_enqueue_scripts() {
+		wp_enqueue_script(
+			'blockspire-scroll-to-top',
+			get_theme_file_uri( 'assets/js/scroll-to-top.js' ),
+			array(),
+			wp_get_theme()->get( 'Version' ),
+			array(
+				'strategy'  => 'defer',
+				'in_footer' => true,
+			)
+		);
+	}
+}
+add_action( 'wp_enqueue_scripts', 'blockspire_enqueue_scripts' );
+
+if ( ! function_exists( 'blockspire_render_scroll_to_top' ) ) {
+	/**
+	 * Prints the scroll-back-to-top control.
+	 *
+	 * Rendered here rather than in a template part so it is present on every
+	 * view, including ones a user has customised. The label carries the whole
+	 * accessible name; the arrow is a masked pseudo-element that follows
+	 * currentColor, so it stays correct in every style variation.
+	 *
+	 * @since 1.0.0
+	 * @return void
+	 */
+	function blockspire_render_scroll_to_top() {
+		printf(
+			'<button type="button" class="blockspire-scroll-top" hidden>%s</button>',
+			'<span class="screen-reader-text">' . esc_html__( 'Scroll back to top', 'blockspire' ) . '</span>'
+		);
+	}
+}
+add_action( 'wp_footer', 'blockspire_render_scroll_to_top' );
