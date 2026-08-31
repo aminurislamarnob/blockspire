@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-08-31T10:47:57+00:00\n"
+"POT-Creation-Date: 2026-08-31T11:02:23+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: blockspire\n"
@@ -128,6 +128,44 @@ msgstr ""
 msgid "Back to home"
 msgstr ""
 
+#: patterns/about-statement.php
+msgctxt "Pattern title"
+msgid "About statement with figures"
+msgstr ""
+
+#: patterns/about-statement.php
+msgctxt "Pattern description"
+msgid "One large statement paragraph followed by a row of supporting figures, for opening an about page."
+msgstr ""
+
+#: patterns/about-statement.php:16
+msgid "2011"
+msgstr ""
+
+#: patterns/about-statement.php:17
+msgid "Year we started"
+msgstr ""
+
+#: patterns/about-statement.php:20
+msgid "31"
+msgstr ""
+
+#: patterns/about-statement.php:21
+msgid "Countries worked in"
+msgstr ""
+
+#: patterns/about-statement.php:24
+msgid "96%"
+msgstr ""
+
+#: patterns/about-statement.php:25
+msgid "Clients who come back"
+msgstr ""
+
+#: patterns/about-statement.php:32
+msgid "We are a studio of designers and engineers who like the unglamorous parts: the migration nobody wants to touch, the checkout that has to survive a Monday morning, the admin screen a team will use every day for years."
+msgstr ""
+
 #: patterns/blog-heading.php
 msgctxt "Pattern title"
 msgid "Blog heading"
@@ -146,6 +184,24 @@ msgstr ""
 
 #: patterns/blog-heading.php:21
 msgid "Latest writing"
+msgstr ""
+
+#: patterns/callout.php
+msgctxt "Pattern title"
+msgid "Callout box"
+msgstr ""
+
+#: patterns/callout.php
+msgctxt "Pattern description"
+msgid "A bordered box with an icon, a short heading and a link, for drawing attention to one thing inside a longer page."
+msgstr ""
+
+#: patterns/callout.php:26
+msgid "Not sure where to start?"
+msgstr ""
+
+#: patterns/callout.php:30
+msgid "Book a half hour with us, free"
 msgstr ""
 
 #: patterns/comments.php
@@ -185,6 +241,7 @@ msgid "Call us"
 msgstr ""
 
 #: patterns/contact-details.php:27
+#: patterns/contact-panel.php:21
 msgid "+1 555 000 0000"
 msgstr ""
 
@@ -197,6 +254,7 @@ msgid "Email us"
 msgstr ""
 
 #: patterns/contact-details.php:35
+#: patterns/contact-panel.php:25
 msgid "hello@example.com"
 msgstr ""
 
@@ -211,6 +269,104 @@ msgstr ""
 
 #: patterns/contact-details.php:49
 msgid "Tell us what you need"
+msgstr ""
+
+#: patterns/contact-panel.php
+msgctxt "Pattern title"
+msgid "Contact panel with details"
+msgstr ""
+
+#: patterns/contact-panel.php
+msgctxt "Pattern description"
+msgid "A two panel card: contact details and opening hours on a light panel, an invitation to write in on a dark one."
+msgstr ""
+
+#: patterns/contact-panel.php:20
+msgid "Phone"
+msgstr ""
+
+#: patterns/contact-panel.php:24
+msgid "Email"
+msgstr ""
+
+#: patterns/contact-panel.php:28
+msgid "Hours"
+msgstr ""
+
+#: patterns/contact-panel.php:29
+msgid "Monday to Friday, 9am to 6pm"
+msgstr ""
+
+#: patterns/contact-panel.php:32
+msgid "Address"
+msgstr ""
+
+#: patterns/contact-panel.php:33
+msgid "18 Fitzroy Street, London W1T 4BQ"
+msgstr ""
+
+#: patterns/contact-panel.php:42
+msgid "Contact information"
+msgstr ""
+
+#: patterns/contact-panel.php:64
+msgid "Tell us about the project"
+msgstr ""
+
+#: patterns/contact-panel.php:68
+msgid "A sentence or two about what you are trying to do is plenty to start with. We read every message ourselves and reply within one working day."
+msgstr ""
+
+#: patterns/contact-panel.php:73
+msgid "Send an enquiry"
+msgstr ""
+
+#: patterns/content-two-columns.php
+msgctxt "Pattern title"
+msgid "Heading with two columns of text"
+msgstr ""
+
+#: patterns/content-two-columns.php
+msgctxt "Pattern description"
+msgid "A section heading above two columns of running text, for longer copy such as an about page or a policy."
+msgstr ""
+
+#: patterns/content-two-columns.php:17
+msgid "How we got here"
+msgstr ""
+
+#: patterns/content-two-columns.php:23
+msgid "The studio started with two people and one client who needed a shop rebuilt before Christmas. We made the deadline, mostly by cutting the right things rather than working the whole of December."
+msgstr ""
+
+#: patterns/content-two-columns.php:27
+msgid "That habit stuck. Every project since has started with the same question: what is the smallest thing that would genuinely help, and what are we adding only because it is expected?"
+msgstr ""
+
+#: patterns/content-two-columns.php:33
+msgid "We have grown slowly and on purpose. Everyone who joins works on real client projects in their first week, because the alternative is a team that knows the process but not the work."
+msgstr ""
+
+#: patterns/content-two-columns.php:37
+msgid "Some of those first clients are still with us. That is the only growth figure we pay much attention to."
+msgstr ""
+
+#: patterns/cta-banner.php
+msgctxt "Pattern title"
+msgid "Compact call to action banner"
+msgstr ""
+
+#: patterns/cta-banner.php
+msgctxt "Pattern description"
+msgid "A short coloured strip with an invitation on one side and a single button on the other."
+msgstr ""
+
+#: patterns/cta-banner.php:18
+msgid "Got a project? Let&#8217;s talk."
+msgstr ""
+
+#: patterns/cta-banner.php:23
+msgid "Start a conversation"
 msgstr ""
 
 #: patterns/cta.php
@@ -230,6 +386,65 @@ msgstr ""
 
 #: patterns/cta.php:43
 msgid "Start a Project"
+msgstr ""
+
+#: patterns/faq-two-column.php
+msgctxt "Pattern title"
+msgid "FAQ with a sidebar introduction"
+msgstr ""
+
+#: patterns/faq-two-column.php
+msgctxt "Pattern description"
+msgid "An introduction and a way to get in touch on the left, with the expandable questions stacked on the right."
+msgstr ""
+
+#: patterns/faq-two-column.php:16
+msgid "Do you work with businesses outside your region?"
+msgstr ""
+
+#: patterns/faq-two-column.php:17
+msgid "Most of our clients are, and always have been, somewhere else. We keep overlapping hours and write things down, which turns out to matter more than sharing a postcode."
+msgstr ""
+
+#: patterns/faq-two-column.php:20
+msgid "Who owns the code you write?"
+msgstr ""
+
+#: patterns/faq-two-column.php:21
+msgid "You do, from the first commit. We hand over the repository at the end of every project whether or not you carry on working with us."
+msgstr ""
+
+#: patterns/faq-two-column.php:24
+msgid "Can you take over a project someone else started?"
+msgstr ""
+
+#: patterns/faq-two-column.php:25
+msgid "Frequently. We begin with a short paid audit so we can tell you honestly what shape it is in before either of us commits to anything larger."
+msgstr ""
+
+#: patterns/faq-two-column.php:28
+msgid "How do you charge?"
+msgstr ""
+
+#: patterns/faq-two-column.php:29
+msgid "Fixed price for defined work, a monthly retainer for ongoing care. We do not bill by the hour, because it rewards the wrong thing."
+msgstr ""
+
+#: patterns/faq-two-column.php:38
+#: patterns/faq.php:37
+msgid "FAQ"
+msgstr ""
+
+#: patterns/faq-two-column.php:42
+msgid "Things people ask before they hire us"
+msgstr ""
+
+#: patterns/faq-two-column.php:46
+msgid "If the answer you need is not here, write to us and a person will reply."
+msgstr ""
+
+#: patterns/faq-two-column.php:50
+msgid "Ask a question"
 msgstr ""
 
 #: patterns/faq.php
@@ -272,10 +487,6 @@ msgstr ""
 
 #: patterns/faq.php:29
 msgid "You own everything we build. We offer ongoing care plans if you want them, but you are never locked in and you can take the site elsewhere at any point."
-msgstr ""
-
-#: patterns/faq.php:37
-msgid "FAQ"
 msgstr ""
 
 #: patterns/faq.php:41
@@ -431,6 +642,7 @@ msgid "Services"
 msgstr ""
 
 #: patterns/footer.php:69
+#: patterns/section-intro-split.php:19
 msgid "Portfolio"
 msgstr ""
 
@@ -545,6 +757,7 @@ msgid "Everything we build belongs to you"
 msgstr ""
 
 #: patterns/media-text.php:31
+#: patterns/page-header.php:18
 msgid "About us"
 msgstr ""
 
@@ -554,6 +767,28 @@ msgstr ""
 
 #: patterns/media-text.php:39
 msgid "We are a small team that has been building for the web long enough to know which shortcuts cost more than they save. You get the same people from the first call to the last deployment."
+msgstr ""
+
+#: patterns/newsletter.php
+msgctxt "Pattern title"
+msgid "Newsletter sign-up band"
+msgstr ""
+
+#: patterns/newsletter.php
+msgctxt "Pattern description"
+msgid "A standalone sign-up band that picks up the Mailchimp for WordPress form when the plugin is active, and falls back to a button when it is not."
+msgstr ""
+
+#: patterns/newsletter.php:18
+msgid "One useful email a month"
+msgstr ""
+
+#: patterns/newsletter.php:22
+msgid "What we have learned, what we have shipped, and the occasional thing we got wrong. No selling."
+msgstr ""
+
+#: patterns/newsletter.php:32
+msgid "Subscribe"
 msgstr ""
 
 #: patterns/no-results.php
@@ -568,6 +803,82 @@ msgstr ""
 
 #: patterns/no-results.php:16
 msgid "Nothing turned up. Try a different search, or browse the most recent posts."
+msgstr ""
+
+#: patterns/page-header.php
+msgctxt "Pattern title"
+msgid "Inner page header"
+msgstr ""
+
+#: patterns/page-header.php
+msgctxt "Pattern description"
+msgid "A rounded dark banner carrying a page title and one line of context, for the top of an inner page."
+msgstr ""
+
+#: patterns/page-header.php:22
+msgid "A small studio that has been building for the web since before it was fashionable."
+msgstr ""
+
+#: patterns/portfolio-grid.php
+msgctxt "Pattern title"
+msgid "Portfolio grid in two columns"
+msgstr ""
+
+#: patterns/portfolio-grid.php
+msgctxt "Pattern description"
+msgid "Six project cards in two columns, each with an image slot, a title and a link through to the case study."
+msgstr ""
+
+#: patterns/portfolio-grid.php:16
+msgid "A booking platform for a clinic group"
+msgstr ""
+
+#: patterns/portfolio-grid.php:17
+msgid "Healthcare"
+msgstr ""
+
+#: patterns/portfolio-grid.php:20
+msgid "Rebuilding a marketplace checkout"
+msgstr ""
+
+#: patterns/portfolio-grid.php:21
+msgid "E-commerce"
+msgstr ""
+
+#: patterns/portfolio-grid.php:24
+msgid "A member portal for a trade body"
+msgstr ""
+
+#: patterns/portfolio-grid.php:25
+msgid "Membership"
+msgstr ""
+
+#: patterns/portfolio-grid.php:28
+msgid "Publishing tools for a news desk"
+msgstr ""
+
+#: patterns/portfolio-grid.php:29
+msgid "Editorial"
+msgstr ""
+
+#: patterns/portfolio-grid.php:32
+msgid "An estate agency search rebuild"
+msgstr ""
+
+#: patterns/portfolio-grid.php:33
+msgid "Property"
+msgstr ""
+
+#: patterns/portfolio-grid.php:36
+msgid "A logistics dashboard that loads fast"
+msgstr ""
+
+#: patterns/portfolio-grid.php:37
+msgid "Operations"
+msgstr ""
+
+#: patterns/portfolio-grid.php:69
+msgid "View case study"
 msgstr ""
 
 #: patterns/post-meta.php
@@ -596,6 +907,16 @@ msgstr ""
 
 #: patterns/posts-grid.php:28
 msgid "View all posts"
+msgstr ""
+
+#: patterns/posts-two-column.php
+msgctxt "Pattern title"
+msgid "Posts in two columns with excerpts"
+msgstr ""
+
+#: patterns/posts-two-column.php
+msgctxt "Pattern description"
+msgid "A roomier two column listing with featured images, categories, titles, excerpts and pagination, for a blog landing page."
 msgstr ""
 
 #: patterns/pricing.php
@@ -713,6 +1034,7 @@ msgid "Four numbered steps explaining how you work, from first conversation thro
 msgstr ""
 
 #: patterns/process.php:16
+#: patterns/services-alternating.php:16
 msgid "01"
 msgstr ""
 
@@ -725,6 +1047,7 @@ msgid "We start by listening. What the business needs, who it serves and what su
 msgstr ""
 
 #: patterns/process.php:21
+#: patterns/services-alternating.php:21
 msgid "02"
 msgstr ""
 
@@ -737,6 +1060,7 @@ msgid "A clear scope, a realistic timeline and a written estimate, agreed before
 msgstr ""
 
 #: patterns/process.php:26
+#: patterns/services-alternating.php:26
 msgid "03"
 msgstr ""
 
@@ -864,6 +1188,30 @@ msgstr ""
 msgid "Related products"
 msgstr ""
 
+#: patterns/quote.php
+msgctxt "Pattern title"
+msgid "Large pull quote"
+msgstr ""
+
+#: patterns/quote.php
+msgctxt "Pattern description"
+msgid "One quotation set large and centred on a tinted band, with an attribution underneath."
+msgstr ""
+
+#: patterns/quote.php:17
+msgid "&#8220;They treated our budget like it was their own money. That is the part I tell other people about.&#8221;"
+msgstr ""
+
+#: patterns/quote.php:22
+#: patterns/testimonials.php:17
+msgid "Priya Raman"
+msgstr ""
+
+#: patterns/quote.php:26
+#: patterns/testimonials.php:18
+msgid "Operations Lead, Northwind"
+msgstr ""
+
 #: patterns/search-form.php
 msgctxt "Pattern title"
 msgid "Search form"
@@ -872,6 +1220,58 @@ msgstr ""
 #: patterns/search-form.php
 msgctxt "Pattern description"
 msgid "A labelled search field with a submit button."
+msgstr ""
+
+#: patterns/section-intro-split.php
+msgctxt "Pattern title"
+msgid "Split section introduction"
+msgstr ""
+
+#: patterns/section-intro-split.php
+msgctxt "Pattern description"
+msgid "An eyebrow and large heading on one side with a supporting paragraph on the other, for opening an inner page."
+msgstr ""
+
+#: patterns/section-intro-split.php:23
+msgid "We build the bridge between companies and their customers"
+msgstr ""
+
+#: patterns/section-intro-split.php:29
+msgid "A selection of recent work. Each one started as a conversation about what the business actually needed, and ended with something measurable."
+msgstr ""
+
+#: patterns/services-alternating.php
+msgctxt "Pattern title"
+msgid "Services as alternating rows"
+msgstr ""
+
+#: patterns/services-alternating.php
+msgctxt "Pattern description"
+msgid "Each service gets a full row: a numbered heading and description on one side, a media slot on the other, alternating sides down the page."
+msgstr ""
+
+#: patterns/services-alternating.php:17
+msgid "Design that earns its keep"
+msgstr ""
+
+#: patterns/services-alternating.php:18
+msgid "Interfaces built around what people are actually trying to do, tested on real content rather than neat placeholder text."
+msgstr ""
+
+#: patterns/services-alternating.php:22
+msgid "Development you can hand over"
+msgstr ""
+
+#: patterns/services-alternating.php:23
+msgid "Readable, documented code on standard foundations, so the next developer to open it is not starting from scratch."
+msgstr ""
+
+#: patterns/services-alternating.php:27
+msgid "Care after the launch"
+msgstr ""
+
+#: patterns/services-alternating.php:28
+msgid "Updates, monitoring and a person to write to. The unglamorous part that decides whether a site is still good in two years."
 msgstr ""
 
 #: patterns/services.php
@@ -1068,14 +1468,6 @@ msgstr ""
 msgid "They asked better questions than anyone else we spoke to, and the build reflected that. We launched a fortnight early."
 msgstr ""
 
-#: patterns/testimonials.php:17
-msgid "Priya Raman"
-msgstr ""
-
-#: patterns/testimonials.php:18
-msgid "Operations Lead, Northwind"
-msgstr ""
-
 #: patterns/testimonials.php:21
 msgid "The estimate held, the scope held, and nothing arrived as a surprise. That is rarer than it should be."
 msgstr ""
@@ -1106,6 +1498,44 @@ msgstr ""
 
 #: patterns/testimonials.php:40
 msgid "What people say"
+msgstr ""
+
+#: patterns/values.php
+msgctxt "Pattern title"
+msgid "Values in three columns"
+msgstr ""
+
+#: patterns/values.php
+msgctxt "Pattern description"
+msgid "Three short statements of what the business stands for, each above a rule, with no icons to distract."
+msgstr ""
+
+#: patterns/values.php:16
+msgid "Say it plainly"
+msgstr ""
+
+#: patterns/values.php:17
+msgid "No jargon, no padding. If something will take longer or cost more, you hear it from us first rather than finding out later."
+msgstr ""
+
+#: patterns/values.php:20
+msgid "Build to last"
+msgstr ""
+
+#: patterns/values.php:21
+msgid "We would rather spend an extra day on the foundations than hand over something that needs rescuing in six months."
+msgstr ""
+
+#: patterns/values.php:24
+msgid "Stay involved"
+msgstr ""
+
+#: patterns/values.php:25
+msgid "Launch is a milestone, not an exit. The people who built your site are the people who answer when you write in."
+msgstr ""
+
+#: patterns/values.php:32
+msgid "Our values"
 msgstr ""
 
 #: theme.json
