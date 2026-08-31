@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Hero grid",
+	"slug": "hero-grid",
+	"blockTypes": [
+		"core/group"
+	],
+	"styles": {
+		"css": "&{position:relative;isolation:isolate;overflow:clip;--blockspire-grid-line:color-mix(in srgb, currentColor 12%, transparent);--blockspire-grid-tint:color-mix(in srgb, var(--wp--preset--color--primary) 5%, transparent)}\n&::before{content:\"\";position:absolute;z-index:-1;pointer-events:none;inset-block-start:-57px;inset-inline-start:0;inline-size:min(468px, 40vw);block-size:425px;background-image:linear-gradient(var(--blockspire-grid-tint),var(--blockspire-grid-tint)),linear-gradient(var(--blockspire-grid-tint),var(--blockspire-grid-tint)),linear-gradient(var(--blockspire-grid-tint),var(--blockspire-grid-tint)),repeating-linear-gradient(to right, transparent 0 77.45px, var(--blockspire-grid-line) 77.45px 78px),repeating-linear-gradient(to bottom, transparent 0 82.45px, var(--blockspire-grid-line) 82.45px 83px);background-position:312px 120.79px,156px 286.79px,0 369.79px,0 0,0 38.34px;background-size:78px 83px,78px 83px,78px 83px,auto,auto;background-repeat:no-repeat,no-repeat,no-repeat,repeat,repeat}\n&::after{content:\"\";position:absolute;z-index:-1;pointer-events:none;inset-block-start:164px;inset-inline-end:0;inline-size:min(658px, 50vw);block-size:598px;background-image:repeating-linear-gradient(to right, transparent 0 77.45px, var(--blockspire-grid-line) 77.45px 78px),repeating-linear-gradient(to bottom, transparent 0 82.45px, var(--blockspire-grid-line) 82.45px 83px)}\n&:dir(rtl)::before{transform:scaleX(-1)}\n&:dir(rtl)::after{transform:scaleX(-1)}"
+	}
+}
