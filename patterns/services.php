@@ -76,8 +76,8 @@ $blockspire_services = array(
 <!-- /wp:group --></div>
 <!-- /wp:group -->
 
-<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"var:preset|font-size|large-title","fontWeight":"700","lineHeight":"var:custom|line-height|title-large"}}} -->
-<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size--large-title);font-weight:700;line-height:var(--wp--custom--line-height--title-large)"><?php echo wp_kses_post( $blockspire_service['title'] ); ?></h3>
+<!-- wp:heading {"level":3,"style":{"typography":{"fontWeight":"700","lineHeight":"var:custom|line-height|title-large"}},"fontSize":"large-title"} -->
+<h3 class="wp-block-heading has-large-title-font-size" style="font-weight:700;line-height:var(--wp--custom--line-height--title-large)"><?php echo wp_kses_post( $blockspire_service['title'] ); ?></h3>
 <!-- /wp:heading --></div>
 <!-- /wp:group -->
 
