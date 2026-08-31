@@ -46,7 +46,7 @@ Presets are referenced in CSS as `var(--wp--preset--<type>--<slug>)`.
 
 **Contrast (run `node tools/contrast.mjs`):** `primary` passes AA on white at 5.78:1. `accent` is **2.15:1 on white and fails even for large text** — only use it on dark surfaces (7.85:1 on `#111B3A`) or as a non-text decorative fill. `gray-02` is large-text/border only (3.32:1); `gray-03` is borders and dividers only (1.71:1).
 
-**Font sizes:** `display`, `small|medium|large-paragraph`, `small|medium|large-title`, `heading-01`…`heading-06`, `button-large`, `button-small`. **Font family:** `poppins`. **Spacing:** numeric slugs matching the px value (`10`, `12`, `16`, `20`, `24`, `30`, `32`, `40`, `48`, `50`, `60`, `70`, `80`, `100`), plus `fluid-inset` (`clamp(24px, 8.5vw, 100px)`) for section side padding that must shrink on phones. Use `fluid-inset` wherever the design shows 100px horizontal padding on a band or section. The style engine only resolves `var:preset|…` shorthand, never `var:custom|…`, so anything a block needs to reference from its attributes has to be a preset.
+Font size, spacing and font-family presets are enumerated in `theme.json`; read them there. Spacing slugs are the literal px value, with one exception: `fluid-inset` (`clamp(24px, 8.5vw, 100px)`) — use it wherever the design shows 100px horizontal padding on a band or section that must shrink on phones. The style engine only resolves `var:preset|…` shorthand, never `var:custom|…`, so anything a block needs to reference from its attributes has to be a preset.
 
 **Decorative backgrounds** (`assets/images/band-decoration.svg`) are drawn in **white at low opacity**, never in a fixed hue, so they lighten whatever colour sits behind them and stay correct in every style variation. Apply them with the Group block's `style.background.backgroundImage` (core support, `cover` by default), not with custom CSS. `band-decoration.svg` carries the CTA band's exact Figma geometry (18px dot grid, the two angled shapes); `dot-grid.svg` is an 18px tile for repeating surfaces such as the footer (`backgroundSize: "18px"`, `backgroundRepeat: "repeat"`).
 
@@ -67,11 +67,15 @@ Two traps when writing the rules:
 
 **Template parts cannot run PHP**, so a part that needs `get_theme_file_uri()` (footer background, icons) is a one-line `wp:pattern` reference to a PHP pattern (`parts/footer.html` → `patterns/footer.php`, registered with `Block Types: core/template-part/footer`).
 
+**Hand-written block markup must match core's `save()` byte for byte**, or the editor shows "Block contains unexpected or invalid content" while the front end still looks fine — so the bug is invisible until someone opens the Site Editor. The trap already hit: `core/image` with `aspectRatio` set emits **no `width`/`height` HTML attributes** (the ratio comes from the inline `aspect-ratio`), so adding them invalidates the block. When markup is rejected, don't guess — open the template in the Site Editor and read the console: Gutenberg logs `Block validation: Block validation failed for ...` with the expected and actual HTML side by side, which is the authoritative diff.
+
 **Root block gap:** `styles.spacing.blockGap` (20px) also separates the header part, `<main>` and footer part when they sit at the template root. Page templates that need edge-to-edge sections wrap everything in one `alignfull` constrained Group with `blockGap: 0` (see `templates/front-page.html`) and let each section own its vertical padding. The wrapper **must** be `align: full`, otherwise it is constrained to `contentSize` and every full-width child collapses to 800px.
 
-**Line heights** live in `settings.custom.lineHeight` as `var(--wp--custom--line-height--<slug>)` — `display`, `heading-01`…`heading-06`, `title-large|medium|small`, `paragraph-large|medium|small`, `button-large|small`. Letter spacing: `settings.custom.letterSpacing.tight` (-0.03em). A `fontSizes` preset **only ever emits `font-size`**; putting `lineHeight` or `fontWeight` in one does nothing (core's `PRESETS_METADATA` declares `'properties' => array( 'font-size' )`). That is why line heights are custom tokens rather than preset properties.
+**Line heights** live in `settings.custom.lineHeight` as `var(--wp--custom--line-height--<slug>)`. Letter spacing: `settings.custom.letterSpacing.tight` (-0.03em). A `fontSizes` preset **only ever emits `font-size`**; putting `lineHeight` or `fontWeight` in one does nothing (core's `PRESETS_METADATA` declares `'properties' => array( 'font-size' )`). That is why line heights are custom tokens rather than preset properties.
 
 > **Whenever you override a heading's font size, set the matching line height too.** `styles.elements.h1`–`h6` bind a size *and* its line height together. Change only the size on a block — say an `h2` set to `heading-03` — and it keeps the `h2` element's `heading-02` leading, silently pairing a size with the wrong line height. This produced a 63.36px line height where the design called for 64px.
+
+> **A preset font size goes in the block's `fontSize` attribute, never in `style.typography.fontSize`.** Write `"fontSize":"large-title"` (which emits `has-large-title-font-size`), not `"style":{"typography":{"fontSize":"var:preset|font-size|large-title"}}`. The second form renders correctly on the front end — the server-side style engine resolves `var:preset|…` into the inline style — but the **editor's client-side serializer does not**, so the declaration is dropped there and the block silently falls back to the element default from `theme.json`. A services card title set this way rendered 24px on the front end and 60px in the editor, while the sibling `line-height` (a genuine custom value) applied in both. Any preset reference under `style.typography.fontSize` is a bug; grep for `"fontSize":"var:preset` before shipping.
 
 ### Type styles from the design
 
@@ -88,34 +92,24 @@ Values below are the component styles bound in the Figma page designs, which are
 | Paragraph Large | 18 / 28 | 400 | hero supporting text |
 | Paragraph Medium | 16 / 28 | 400 | body, inline links such as "Learn More" |
 | Paragraph Small | 14 / 22 | 400 | card body |
-| Button Large | 16 / 20 | **600** | buttons and navigation links |
-| Button Small | 14 / 20 | 700 | the rounded header button |
+| Button Large | 16 / 20 | 600 in Figma, **500 shipped** | buttons (500) and navigation links (600) |
+| Button Small | 14 / 20 | 700 in Figma, **500 shipped** | the rounded header button |
+
+> **Buttons deliberately ship lighter than the Figma spec.** `elements.button` and `styles/blocks/button-rounded.json` are both `500` by explicit direction, overriding the 600/700 the design binds. Navigation stays at 600 (it shares the Button Large size, not the button element), and `button-chip.json` stays at 400 — the footer contact chips are informational, not calls to action. Don't "correct" these back to the Figma values.
 
 ## Conventions
 
 - Text domain `blockspire`; `Domain Path: /languages`. Wrap user-facing strings in translation functions and regenerate with `npm run pot`.
 - Requires **WP 6.7+ / PHP 7.4+**. Keep API usage within that floor.
 - **Author RTL-safe CSS from the start**: use `margin-inline`, `padding-inline`, `inset-inline`, `text-align: start`. Never physical `left`/`right` properties. Retrofitting is expensive.
-- **Accessibility-ready is a commitment**: skip links, visible focus rings, keyboard-navigable menus, labelled form fields, AA contrast in every style variation.
+- **Accessibility-ready is a commitment**: skip links, visible focus indicators (see **Focus states** — the theme deliberately uses no rings), keyboard-navigable menus, labelled form fields, AA contrast in every style variation.
 - No remote requests. wp.org forbids them — fonts and images are always bundled locally.
 - Every bundled image needs its source URL and licence recorded in `readme.txt`.
 - `useRootPaddingAwareAlignments` and `appearanceTools` are on — prefer theme.json layout settings over hand-written CSS.
 
 ## Commands
 
-There is no runtime build — theme files are hand-authored and served directly. All tooling is dev-only and stays out of the zip.
-
-```
-npm run check      # validate theme.json + style partials, then PHPCS
-npm run lint:json  # catch settings keys WordPress silently ignores
-npm run lint:php   # PHPCS against WordPress standards
-npm run fix:php    # phpcbf autofix
-npm run pot        # regenerate languages/blockspire.pot
-npm run fonts      # convert assets/fonts/*.ttf to WOFF2
-npm run images     # assets/images/src/* -> size-capped WebP
-npm run zip        # clean submission bundle in build/
-node tools/contrast.mjs   # WCAG contrast matrix for the palette
-```
+There is no runtime build — theme files are hand-authored and served directly. All tooling is dev-only and stays out of the zip. The scripts are listed in `package.json`; `npm run check` is the one that gates a commit.
 
 `npm run lint:json` exists because a mistyped `theme.json` key parses fine and then does nothing. It already caught `fontStyles` (correct key: `fontStyle`), `lineHeight`/`fontWeight` on a font-size preset, and `padding-top`-style keys under `styles.spacing.padding` (correct: `top`/`right`/`bottom`/`left`). Run it after every `theme.json` edit.
 
@@ -126,4 +120,4 @@ node tools/contrast.mjs   # WCAG contrast matrix for the palette
 - **Patterns** are cached in a *site* transient, `wp_theme_files_patterns-<cache_hash>`, keyed by the theme's `Version`. `wp transient delete --all` does **not** clear it (that only removes ordinary transients). Clear it with `wp eval 'wp_get_theme()->delete_pattern_cache();'`, or bump the theme version, or turn on theme development mode, which bypasses the cache entirely.
 - **Templates and template parts** are also cached; flush with `wp cache flush` after adding files.
 - **Global styles** compiled from `theme.json` are cached too — hard-refresh if a token change doesn't show.
-- Site Editor customizations saved by a user live in the database (`wp_global_styles`) and **override** `theme.json`. A "my change isn't applying" report is usually this, not a syntax error.
+- Site Editor customizations saved by a user live in the database and **override** the theme files — `wp_global_styles` beats `theme.json`, and `wp_template` / `wp_template_part` posts beat `templates/*.html` and `parts/*.html`. A "my change isn't applying" report is usually this, not a syntax error. Check with `wp post list --post_type=wp_template` and `--post_type=wp_template_part`; an empty list means the theme files are live. **Saving a template in the Site Editor flattens every `wp:pattern` reference into a copy**, so once `front-page` is in the database, editing `patterns/hero.php` changes nothing on the site. Reconcile before trusting a visual check.
