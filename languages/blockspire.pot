@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-08-30T19:21:29+00:00\n"
+"POT-Creation-Date: 2026-08-31T06:02:26+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: blockspire\n"
@@ -83,6 +83,72 @@ msgstr ""
 msgid "Blockspire: Pages"
 msgstr ""
 
+#: patterns/404.php
+msgctxt "Pattern title"
+msgid "404 content"
+msgstr ""
+
+#: patterns/404.php
+msgctxt "Pattern description"
+msgid "The heading, explanation and search shown when a page cannot be found."
+msgstr ""
+
+#: patterns/404.php:17
+msgid "Error 404"
+msgstr ""
+
+#: patterns/404.php:21
+msgid "That page has moved on."
+msgstr ""
+
+#: patterns/404.php:25
+msgid "The link may be out of date, or the page may have been renamed. Try a search, or head back to the homepage."
+msgstr ""
+
+#: patterns/404.php:28
+#: patterns/search-form.php:15
+#: patterns/sidebar.php:18
+msgid "Search"
+msgstr ""
+
+#: patterns/404.php:28
+#: patterns/search-form.php:15
+msgid "Search this site"
+msgstr ""
+
+#: patterns/404.php:32
+msgid "Back to home"
+msgstr ""
+
+#: patterns/blog-heading.php
+msgctxt "Pattern title"
+msgid "Blog heading"
+msgstr ""
+
+#: patterns/blog-heading.php
+msgctxt "Pattern description"
+msgid "The eyebrow and title that introduce the posts listing."
+msgstr ""
+
+#: patterns/blog-heading.php:17
+#: patterns/footer.php:61
+msgid "Blog"
+msgstr ""
+
+#: patterns/blog-heading.php:21
+msgid "Latest writing"
+msgstr ""
+
+#: patterns/comments.php
+msgctxt "Pattern title"
+msgid "Comments"
+msgstr ""
+
+#: patterns/comments.php
+msgctxt "Pattern description"
+msgid "The comment list, pagination and reply form for a single entry."
+msgstr ""
+
 #: patterns/cta.php
 msgctxt "Pattern title"
 msgid "Call to action band"
@@ -100,6 +166,31 @@ msgstr ""
 
 #: patterns/cta.php:43
 msgid "Start a Project"
+msgstr ""
+
+#: patterns/footer-minimal.php
+msgctxt "Pattern title"
+msgid "Minimal footer"
+msgstr ""
+
+#: patterns/footer-minimal.php
+msgctxt "Pattern description"
+msgid "A single quiet row with the site credit, for checkout and other focused pages."
+msgstr ""
+
+#. translators: %s: WordPress.
+#: patterns/footer-minimal.php:21
+#: patterns/footer.php:89
+#: patterns/footer.php:110
+#, php-format
+msgid "Proudly powered by %s"
+msgstr ""
+
+#. translators: %s: WordPress.
+#: patterns/footer-minimal.php:21
+#: patterns/footer.php:89
+#: patterns/footer.php:110
+msgid "https://wordpress.org/"
 msgstr ""
 
 #: patterns/footer.php
@@ -141,10 +232,6 @@ msgstr ""
 msgid "Services"
 msgstr ""
 
-#: patterns/footer.php:61
-msgid "Blog"
-msgstr ""
-
 #: patterns/footer.php:63
 msgid "Contact"
 msgstr ""
@@ -165,21 +252,22 @@ msgstr ""
 msgid "Help"
 msgstr ""
 
-#. translators: %s: WordPress.
-#: patterns/footer.php:89
-#: patterns/footer.php:110
-#, php-format
-msgid "Proudly powered by %s"
-msgstr ""
-
-#. translators: %s: WordPress.
-#: patterns/footer.php:89
-#: patterns/footer.php:110
-msgid "https://wordpress.org/"
-msgstr ""
-
 #: patterns/footer.php:98
 msgid "Subscribe newsletter"
+msgstr ""
+
+#: patterns/header.php
+msgctxt "Pattern title"
+msgid "Header with logo, navigation and call to action"
+msgstr ""
+
+#: patterns/header.php
+msgctxt "Pattern description"
+msgid "The site logo beside the primary navigation and a rounded call to action button."
+msgstr ""
+
+#: patterns/header.php:26
+msgid "Start A Project"
 msgstr ""
 
 #: patterns/hero.php
@@ -206,6 +294,40 @@ msgstr ""
 
 #: patterns/hero.php:39
 msgid "A tidy desk with a monitor, keyboard and mouse beside a window"
+msgstr ""
+
+#: patterns/no-results.php
+msgctxt "Pattern title"
+msgid "No results"
+msgstr ""
+
+#: patterns/no-results.php
+msgctxt "Pattern description"
+msgid "The message shown inside a query loop when nothing matches."
+msgstr ""
+
+#: patterns/no-results.php:16
+msgid "Nothing turned up. Try a different search, or browse the most recent posts."
+msgstr ""
+
+#: patterns/post-meta.php
+msgctxt "Pattern title"
+msgid "Post meta row"
+msgstr ""
+
+#: patterns/post-meta.php
+msgctxt "Pattern description"
+msgid "A single row of post date, author and categories."
+msgstr ""
+
+#: patterns/search-form.php
+msgctxt "Pattern title"
+msgid "Search form"
+msgstr ""
+
+#: patterns/search-form.php
+msgctxt "Pattern description"
+msgid "A labelled search field with a submit button."
 msgstr ""
 
 #: patterns/services.php
@@ -276,6 +398,24 @@ msgstr ""
 
 #: patterns/services.php:100
 msgid "View All"
+msgstr ""
+
+#: patterns/sidebar.php
+msgctxt "Pattern title"
+msgid "Sidebar"
+msgstr ""
+
+#: patterns/sidebar.php
+msgctxt "Pattern description"
+msgid "A search field above recent posts and a category list, for the sidebar templates."
+msgstr ""
+
+#: patterns/sidebar.php:26
+msgid "Recent posts"
+msgstr ""
+
+#: patterns/sidebar.php:34
+msgid "Categories"
 msgstr ""
 
 #: theme.json
@@ -512,7 +652,47 @@ msgstr ""
 
 #: theme.json
 msgctxt "Template part name"
+msgid "Header (minimal)"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
 msgid "Footer"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Footer (minimal)"
+msgstr ""
+
+#: theme.json
+msgctxt "Template part name"
+msgid "Sidebar"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Page without title"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Page with sidebar"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Post with sidebar"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Focused (minimal chrome)"
+msgstr ""
+
+#: theme.json
+msgctxt "Custom template name"
+msgid "Blank canvas"
 msgstr ""
 
 #: styles/blocks/button-arrow.json
@@ -533,6 +713,11 @@ msgstr ""
 #: styles/blocks/button-rounded.json
 msgctxt "Style variation name"
 msgid "Rounded"
+msgstr ""
+
+#: styles/blocks/group-hero-grid.json
+msgctxt "Style variation name"
+msgid "Hero grid"
 msgstr ""
 
 #: styles/blocks/group-newsletter-boxed.json
