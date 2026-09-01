@@ -30,8 +30,8 @@
 <!-- wp:woocommerce/mini-cart {"hasHiddenPrice":true,"fontSize":"button-large"} /--></div>
 <!-- /wp:group -->
 <?php endif; ?>
-<!-- wp:buttons -->
-<div class="wp-block-buttons"><!-- wp:button {"className":"is-style-rounded"} -->
+<!-- wp:buttons {"className":"blockspire-header-cta"} -->
+<div class="wp-block-buttons blockspire-header-cta"><!-- wp:button {"className":"is-style-rounded"} -->
 <div class="wp-block-button is-style-rounded"><a class="wp-block-button__link wp-element-button" href="#"><?php echo esc_html__( 'Start A Project', 'blockspire' ); ?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
