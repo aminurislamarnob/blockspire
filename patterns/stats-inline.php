@@ -14,19 +14,19 @@
 $blockspire_facts = array(
 	array(
 		'figure' => __( '10+', 'blockspire' ),
-		'label'  => __( 'Years of experience', 'blockspire' ),
+		'label'  => __( 'Years of Experience', 'blockspire' ),
 	),
 	array(
 		'figure' => __( '230+', 'blockspire' ),
-		'label'  => __( 'Active customers', 'blockspire' ),
+		'label'  => __( 'Active Customers', 'blockspire' ),
 	),
 	array(
 		'figure' => __( '60+', 'blockspire' ),
-		'label'  => __( 'Team members', 'blockspire' ),
+		'label'  => __( 'Team Members', 'blockspire' ),
 	),
 	array(
 		'figure' => __( '500+', 'blockspire' ),
-		'label'  => __( 'Companies trusted us', 'blockspire' ),
+		'label'  => __( 'Companies Trusted Us', 'blockspire' ),
 	),
 );
 

@@ -81,7 +81,8 @@ $blockspire_team = array(
 <div class="wp-block-group has-light-bg-background-color has-background" style="min-height:330px"></div>
 <!-- /wp:group -->
 
-<!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"default"}} -->
+<!-- wp:group {"className":"is-style-arrow-lead","style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"top"}} -->
+<div class="wp-block-group is-style-arrow-lead"><!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"default"}} -->
 <div class="wp-block-group"><!-- wp:heading {"level":3,"style":{"typography":{"fontWeight":"700","lineHeight":"var:custom|line-height|paragraph-medium"}},"textColor":"text-white","fontSize":"medium-paragraph"} -->
 <h3 class="wp-block-heading has-text-white-color has-text-color has-medium-paragraph-font-size" style="font-weight:700;line-height:var(--wp--custom--line-height--paragraph-medium)"><?php echo esc_html( $blockspire_member['name'] ); ?></h3>
 <!-- /wp:heading -->
@@ -89,6 +90,7 @@ $blockspire_team = array(
 <!-- wp:paragraph {"style":{"typography":{"lineHeight":"var:custom|line-height|paragraph-small"}},"textColor":"gray-02","fontSize":"small-paragraph"} -->
 <p class="has-gray-02-color has-text-color has-small-paragraph-font-size" style="line-height:var(--wp--custom--line-height--paragraph-small)"><?php echo esc_html( $blockspire_member['role'] ); ?></p>
 <!-- /wp:paragraph --></div>
+<!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->
 <?php endforeach; ?>

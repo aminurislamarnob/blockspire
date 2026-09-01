@@ -29,7 +29,7 @@ $blockspire_services = array(
 	),
 	array(
 		'icon'  => 'icon-layers',
-		'title' => __( 'Custom Web Development', 'blockspire' ),
+		'title' => __( 'Custom WordPress Development', 'blockspire' ),
 		'text'  => __( 'Build considered, standards-based sites that stay fast and easy to look after.', 'blockspire' ),
 	),
 	array(
