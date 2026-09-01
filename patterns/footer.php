@@ -80,9 +80,9 @@
 <!-- /wp:columns -->
 
 <?php if ( function_exists( 'mc4wp_show_form' ) ) : ?>
-<!-- wp:columns {"verticalAlignment":"bottom","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|40","left":"var:preset|spacing|40"}}}} -->
-<div class="wp-block-columns are-vertically-aligned-bottom"><!-- wp:column {"verticalAlignment":"bottom"} -->
-<div class="wp-block-column is-vertically-aligned-bottom"><!-- wp:paragraph {"style":{"typography":{"lineHeight":"var:custom|line-height|paragraph-medium"}},"textColor":"text-white","fontSize":"medium-paragraph"} -->
+<!-- wp:columns {"verticalAlignment":"bottom","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|40","left":"var:preset|spacing|80"}}}} -->
+<div class="wp-block-columns are-vertically-aligned-bottom"><!-- wp:column {"verticalAlignment":"bottom","width":"636px"} -->
+<div class="wp-block-column is-vertically-aligned-bottom" style="flex-basis:636px"><!-- wp:paragraph {"style":{"typography":{"lineHeight":"var:custom|line-height|paragraph-medium"}},"textColor":"text-white","fontSize":"medium-paragraph"} -->
 <p class="has-text-white-color has-text-color has-medium-paragraph-font-size" style="line-height:var(--wp--custom--line-height--paragraph-medium)">
 	<?php
 	/* translators: %s: WordPress. */
