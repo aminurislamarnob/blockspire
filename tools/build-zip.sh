@@ -35,6 +35,7 @@ rsync -a \
 	--exclude 'phpcs.xml.dist' \
 	--exclude '.editorconfig' \
 	--exclude 'CLAUDE.md' \
+	--exclude 'docs' \
 	--exclude 'README.md' \
 	--exclude 'assets/images/src' \
 	--exclude '.DS_Store' \
@@ -56,7 +57,7 @@ for required in style.css theme.json readme.txt screenshot.png; do
 		echo "  MISSING ${required}"
 	fi
 done
-for forbidden in node_modules vendor tools package.json composer.json; do
+for forbidden in node_modules vendor tools docs package.json composer.json; do
 	if [ -e "${STAGE}/${forbidden}" ]; then
 		echo "  LEAKED  ${forbidden}"
 	fi
