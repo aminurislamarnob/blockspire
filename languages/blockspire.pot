@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-09-01T03:05:57+00:00\n"
+"POT-Creation-Date: 2026-09-01T04:14:27+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: blockspire\n"
@@ -87,7 +87,7 @@ msgstr ""
 msgid "Blockspire: Shop"
 msgstr ""
 
-#: functions.php:124
+#: functions.php:210
 msgid "Scroll back to top"
 msgstr ""
 
@@ -785,7 +785,7 @@ msgctxt "Pattern description"
 msgid "The site logo beside the primary navigation and a rounded call to action button."
 msgstr ""
 
-#: patterns/header.php:31
+#: patterns/header.php:33
 msgid "Start A Project"
 msgstr ""
 
@@ -1784,7 +1784,7 @@ msgstr ""
 
 #: patterns/testimonials-rated.php
 msgctxt "Pattern description"
-msgid "A centred section heading above three borderless quotes, each with a five star rating and the name, role and portrait of the person who gave it."
+msgid "A centred section heading above a strip of borderless quotes that scrolls and snaps three at a time, each with a five star rating and the name, role and portrait of the person who gave it. Page dots appear when the theme&#8217;s script is loaded."
 msgstr ""
 
 #: patterns/testimonials-rated.php:16
@@ -1817,15 +1817,88 @@ msgstr ""
 msgid "Marketing Director, Baseline"
 msgstr ""
 
+#: patterns/testimonials-rated.php:31
+msgid "“The estimate they gave us in week one was the number we actually paid. I did not know that happened in this industry.”"
+msgstr ""
+
+#: patterns/testimonials-rated.php:32
+msgid "Marcus Chen"
+msgstr ""
+
+#: patterns/testimonials-rated.php:33
+#: patterns/testimonials.php:23
+msgid "Founder, Fieldnote"
+msgstr ""
+
 #: patterns/testimonials-rated.php:36
+msgid "“Our old site needed a developer for every small change. Now the whole team updates the catalogue without asking anyone.”"
+msgstr ""
+
+#: patterns/testimonials-rated.php:37
+msgid "Leila Haddad"
+msgstr ""
+
+#: patterns/testimonials-rated.php:38
+msgid "Store Manager, Marigold &amp; Co"
+msgstr ""
+
+#: patterns/testimonials-rated.php:41
+msgid "“They rebuilt our checkout in three weeks and abandoned carts dropped by a third. The numbers made the case for us.”"
+msgstr ""
+
+#: patterns/testimonials-rated.php:42
+msgid "Tomás Rivera"
+msgstr ""
+
+#: patterns/testimonials-rated.php:43
+msgid "E-commerce Lead, Brightside"
+msgstr ""
+
+#: patterns/testimonials-rated.php:46
+msgid "“Every handover document was written as if we would never speak again. We still call them, but we have never needed to.”"
+msgstr ""
+
+#: patterns/testimonials-rated.php:47
+msgid "Ingrid Solberg"
+msgstr ""
+
+#: patterns/testimonials-rated.php:48
+msgid "Product Owner, Harbourlight"
+msgstr ""
+
+#: patterns/testimonials-rated.php:51
+msgid "“Accessibility was in the first proposal, not a line item added at the end. Our audit came back with nothing to fix.”"
+msgstr ""
+
+#: patterns/testimonials-rated.php:52
+msgid "Daniel Osei"
+msgstr ""
+
+#: patterns/testimonials-rated.php:53
+msgid "Digital Manager, Cornerstone Trust"
+msgstr ""
+
+#: patterns/testimonials-rated.php:56
+msgid "“Three agencies told us our idea needed an app. They shipped it as a website in half the budget, and it works on everything.”"
+msgstr ""
+
+#: patterns/testimonials-rated.php:57
+msgid "Hana Sato"
+msgstr ""
+
+#: patterns/testimonials-rated.php:58
+msgid "Co-founder, Papermoon"
+msgstr ""
+
+#: patterns/testimonials-rated.php:66
 msgid "Testimonial"
 msgstr ""
 
-#: patterns/testimonials-rated.php:40
+#: patterns/testimonials-rated.php:70
 msgid "Our client stories"
 msgstr ""
 
-#: patterns/testimonials-rated.php:49
+#: patterns/testimonials-rated.php:79
 msgid "Rated 5 out of 5"
 msgstr ""
 
@@ -1849,10 +1922,6 @@ msgstr ""
 
 #: patterns/testimonials.php:22
 msgid "Tomas Lindqvist"
-msgstr ""
-
-#: patterns/testimonials.php:23
-msgid "Founder, Fieldnote"
 msgstr ""
 
 #: patterns/testimonials.php:26
@@ -1903,6 +1972,16 @@ msgstr ""
 
 #: patterns/values.php:32
 msgid "Our values"
+msgstr ""
+
+#: assets/js/carousel.js:51
+msgid "Choose a testimonial page"
+msgstr ""
+
+#. translators: %d: page number in the testimonial slider.
+#: assets/js/carousel.js:158
+#, js-format
+msgid "Go to testimonial page %d"
 msgstr ""
 
 #: theme.json

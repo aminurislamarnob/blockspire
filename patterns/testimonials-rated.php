@@ -3,7 +3,7 @@
  * Title: Client stories with ratings
  * Slug: blockspire/testimonials-rated
  * Categories: blockspire-testimonials
- * Description: A centred section heading above three borderless quotes, each with a five star rating and the name, role and portrait of the person who gave it.
+ * Description: A centred section heading above a strip of borderless quotes that scrolls and snaps three at a time, each with a five star rating and the name, role and portrait of the person who gave it. Page dots appear when the theme&#8217;s script is loaded.
  * Keywords: testimonials, reviews, ratings, stars, clients
  * Viewport Width: 1600
  *
@@ -27,6 +27,36 @@ $blockspire_stories = array(
 		'name'  => __( 'Amara Okafor', 'blockspire' ),
 		'role'  => __( 'Marketing Director, Baseline', 'blockspire' ),
 	),
+	array(
+		'quote' => __( '“The estimate they gave us in week one was the number we actually paid. I did not know that happened in this industry.”', 'blockspire' ),
+		'name'  => __( 'Marcus Chen', 'blockspire' ),
+		'role'  => __( 'Founder, Fieldnote', 'blockspire' ),
+	),
+	array(
+		'quote' => __( '“Our old site needed a developer for every small change. Now the whole team updates the catalogue without asking anyone.”', 'blockspire' ),
+		'name'  => __( 'Leila Haddad', 'blockspire' ),
+		'role'  => __( 'Store Manager, Marigold &amp; Co', 'blockspire' ),
+	),
+	array(
+		'quote' => __( '“They rebuilt our checkout in three weeks and abandoned carts dropped by a third. The numbers made the case for us.”', 'blockspire' ),
+		'name'  => __( 'Tomás Rivera', 'blockspire' ),
+		'role'  => __( 'E-commerce Lead, Brightside', 'blockspire' ),
+	),
+	array(
+		'quote' => __( '“Every handover document was written as if we would never speak again. We still call them, but we have never needed to.”', 'blockspire' ),
+		'name'  => __( 'Ingrid Solberg', 'blockspire' ),
+		'role'  => __( 'Product Owner, Harbourlight', 'blockspire' ),
+	),
+	array(
+		'quote' => __( '“Accessibility was in the first proposal, not a line item added at the end. Our audit came back with nothing to fix.”', 'blockspire' ),
+		'name'  => __( 'Daniel Osei', 'blockspire' ),
+		'role'  => __( 'Digital Manager, Cornerstone Trust', 'blockspire' ),
+	),
+	array(
+		'quote' => __( '“Three agencies told us our idea needed an app. They shipped it as a website in half the budget, and it works on everything.”', 'blockspire' ),
+		'name'  => __( 'Hana Sato', 'blockspire' ),
+		'role'  => __( 'Co-founder, Papermoon', 'blockspire' ),
+	),
 );
 
 ?>
@@ -41,11 +71,11 @@ $blockspire_stories = array(
 <!-- /wp:heading --></div>
 <!-- /wp:group -->
 
-<!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"var:preset|spacing|48","left":"var:preset|spacing|30"}}}} -->
-<div class="wp-block-columns">
+<!-- wp:group {"className":"blockspire-carousel","style":{"spacing":{"blockGap":"var:preset|spacing|30"}},"layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group blockspire-carousel">
 <?php foreach ( $blockspire_stories as $blockspire_story ) : ?>
-<!-- wp:column {"style":{"spacing":{"blockGap":"var:preset|spacing|24"}},"layout":{"type":"default"}} -->
-<div class="wp-block-column"><!-- wp:paragraph {"className":"is-style-rating","textColor":"accent"} -->
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|24"}},"layout":{"type":"default"}} -->
+<div class="wp-block-group"><!-- wp:paragraph {"className":"is-style-rating","textColor":"accent"} -->
 <p class="is-style-rating has-accent-color has-text-color"><?php echo esc_html__( 'Rated 5 out of 5', 'blockspire' ); ?></p>
 <!-- /wp:paragraph -->
 
@@ -68,22 +98,8 @@ $blockspire_stories = array(
 <!-- /wp:paragraph --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group --></div>
-<!-- /wp:column -->
+<!-- /wp:group -->
 <?php endforeach; ?>
 </div>
-<!-- /wp:columns -->
-
-<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
-<div class="wp-block-group"><!-- wp:group {"style":{"border":{"radius":"100px"},"dimensions":{"minWidth":"12px","minHeight":"12px"}},"backgroundColor":"heading-color","layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group has-heading-color-background-color has-background" style="border-radius:100px;min-height:12px;min-width:12px"></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"style":{"border":{"radius":"100px"},"dimensions":{"minWidth":"12px","minHeight":"12px"}},"backgroundColor":"gray-03","layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group has-gray-03-background-color has-background" style="border-radius:100px;min-height:12px;min-width:12px"></div>
-<!-- /wp:group -->
-
-<!-- wp:group {"style":{"border":{"radius":"100px"},"dimensions":{"minWidth":"12px","minHeight":"12px"}},"backgroundColor":"gray-03","layout":{"type":"flex","flexWrap":"nowrap"}} -->
-<div class="wp-block-group has-gray-03-background-color has-background" style="border-radius:100px;min-height:12px;min-width:12px"></div>
-<!-- /wp:group --></div>
 <!-- /wp:group --></div>
 <!-- /wp:group -->

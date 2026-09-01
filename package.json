@@ -8,7 +8,7 @@
   "scripts": {
     "fonts": "node tools/convert-fonts.mjs",
     "images": "node tools/convert-images.mjs",
-    "pot": "wp i18n make-pot . languages/blockspire.pot --domain=blockspire --exclude=node_modules,vendor,tools,build,assets",
+    "pot": "wp i18n make-pot . languages/blockspire.pot --domain=blockspire --exclude=node_modules,vendor,tools,build,assets/images,assets/fonts",
     "lint:php": "composer run lint",
     "fix:php": "composer run fix",
     "lint:json": "node tools/validate-json.mjs",
