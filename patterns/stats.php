@@ -31,7 +31,7 @@ $blockspire_stats = array(
 );
 
 ?>
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80","left":"var:preset|spacing|fluid-inset","right":"var:preset|spacing|fluid-inset"}},"background":{"backgroundImage":{"url":"<?php echo esc_url( get_theme_file_uri( 'assets/images/dot-grid.svg' ) ); ?>"},"backgroundSize":"18px","backgroundRepeat":"repeat","backgroundPosition":"0 0"}},"backgroundColor":"secondary","textColor":"text-white","layout":{"type":"constrained","contentSize":"1170px"}} -->
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","bottom":"var:preset|spacing|80","left":"var:preset|spacing|fluid-inset","right":"var:preset|spacing|fluid-inset"}},"background":{"backgroundImage":{"url":"<?php echo esc_url( get_theme_file_uri( 'assets/images/dot-grid.svg' ) ); ?>"},"backgroundSize":"30px","backgroundRepeat":"repeat","backgroundPosition":"0 0"}},"backgroundColor":"secondary","textColor":"text-white","layout":{"type":"constrained","contentSize":"1170px"}} -->
 <div class="wp-block-group alignfull has-text-white-color has-secondary-background-color has-text-color has-background" style="padding-top:var(--wp--preset--spacing--80);padding-right:var(--wp--preset--spacing--fluid-inset);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--fluid-inset)"><!-- wp:columns {"style":{"spacing":{"blockGap":{"top":"var:preset|spacing|40","left":"var:preset|spacing|40"}}}} -->
 <div class="wp-block-columns">
 <?php foreach ( $blockspire_stats as $blockspire_stat ) : ?>
