@@ -4,6 +4,7 @@
  * Slug: blockspire/sidebar
  * Categories: blockspire-blog
  * Block Types: core/template-part/sidebar
+ * Viewport Width: 400
  * Description: A search field above recent posts and a category list, for the sidebar templates.
  * Keywords: sidebar, aside, widgets, search, recent posts, categories
  *
