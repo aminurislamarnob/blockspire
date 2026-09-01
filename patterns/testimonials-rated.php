@@ -71,5 +71,19 @@ $blockspire_stories = array(
 <!-- /wp:column -->
 <?php endforeach; ?>
 </div>
-<!-- /wp:columns --></div>
+<!-- /wp:columns -->
+
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|10"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"center"}} -->
+<div class="wp-block-group"><!-- wp:group {"style":{"border":{"radius":"100px"},"dimensions":{"minWidth":"12px","minHeight":"12px"}},"backgroundColor":"heading-color","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group has-heading-color-background-color has-background" style="border-radius:100px;min-height:12px;min-width:12px"></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"border":{"radius":"100px"},"dimensions":{"minWidth":"12px","minHeight":"12px"}},"backgroundColor":"gray-03","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group has-gray-03-background-color has-background" style="border-radius:100px;min-height:12px;min-width:12px"></div>
+<!-- /wp:group -->
+
+<!-- wp:group {"style":{"border":{"radius":"100px"},"dimensions":{"minWidth":"12px","minHeight":"12px"}},"backgroundColor":"gray-03","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+<div class="wp-block-group has-gray-03-background-color has-background" style="border-radius:100px;min-height:12px;min-width:12px"></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
 <!-- /wp:group -->

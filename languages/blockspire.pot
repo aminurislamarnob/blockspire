@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2026-08-31T12:49:02+00:00\n"
+"POT-Creation-Date: 2026-09-01T03:05:57+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.12.0\n"
 "X-Domain: blockspire\n"
@@ -225,7 +225,7 @@ msgstr ""
 #: patterns/blog-heading.php:17
 #: patterns/footer.php:61
 #: patterns/posts-grid.php:19
-#: patterns/posts-latest.php:19
+#: patterns/posts-latest.php:23
 msgid "Blog"
 msgstr ""
 
@@ -758,7 +758,6 @@ msgid "Portfolio"
 msgstr ""
 
 #: patterns/footer.php:71
-#: patterns/stats-inline.php:25
 #: patterns/team-dark.php:54
 msgid "Team members"
 msgstr ""
@@ -844,8 +843,34 @@ msgstr ""
 msgid "Let&#8217;s Talk With Us"
 msgstr ""
 
-#: patterns/hero.php:39
+#: patterns/hero.php:40
 msgid "A tidy desk with a monitor, keyboard and mouse beside a window"
+msgstr ""
+
+#: patterns/hero.php:45
+msgid "2K+"
+msgstr ""
+
+#: patterns/hero.php:49
+msgid "Successful projects"
+msgstr ""
+
+#: patterns/hero.php:56
+msgid "100%"
+msgstr ""
+
+#: patterns/hero.php:68
+msgid "Client"
+msgstr ""
+
+#: patterns/hero.php:72
+msgid "Satisfaction"
+msgstr ""
+
+#: patterns/hero.php:85
+#: patterns/process-split.php:42
+#: patterns/process.php:41
+msgid "How we work"
 msgstr ""
 
 #: patterns/media-text.php
@@ -1028,16 +1053,16 @@ msgctxt "Pattern description"
 msgid "An eyebrow, heading and archive link beside each other, above the two newest posts as large cards with the category shown on the image."
 msgstr ""
 
-#: patterns/posts-latest.php:23
+#: patterns/posts-latest.php:27
 msgid "Our latest articles"
 msgstr ""
 
-#: patterns/posts-latest.php:29
+#: patterns/posts-latest.php:33
 #: patterns/team-dark.php:64
 msgid "View all"
 msgstr ""
 
-#: patterns/posts-latest.php:45
+#: patterns/posts-latest.php:49
 msgid "Read more"
 msgstr ""
 
@@ -1203,11 +1228,6 @@ msgstr ""
 
 #: patterns/process-split.php:38
 msgid "Work process"
-msgstr ""
-
-#: patterns/process-split.php:42
-#: patterns/process.php:41
-msgid "How we work"
 msgstr ""
 
 #: patterns/process-split.php:69
@@ -1498,7 +1518,7 @@ msgid "Launch and grow an online store designed to convert visitors into loyal c
 msgstr ""
 
 #: patterns/services.php:32
-msgid "Custom Web Development"
+msgid "Custom WordPress Development"
 msgstr ""
 
 #: patterns/services.php:33
@@ -1584,7 +1604,7 @@ msgid "10+"
 msgstr ""
 
 #: patterns/stats-inline.php:17
-msgid "Years of experience"
+msgid "Years of Experience"
 msgstr ""
 
 #: patterns/stats-inline.php:20
@@ -1592,11 +1612,15 @@ msgid "230+"
 msgstr ""
 
 #: patterns/stats-inline.php:21
-msgid "Active customers"
+msgid "Active Customers"
 msgstr ""
 
 #: patterns/stats-inline.php:24
 msgid "60+"
+msgstr ""
+
+#: patterns/stats-inline.php:25
+msgid "Team Members"
 msgstr ""
 
 #: patterns/stats-inline.php:28
@@ -1604,7 +1628,7 @@ msgid "500+"
 msgstr ""
 
 #: patterns/stats-inline.php:29
-msgid "Companies trusted us"
+msgid "Companies Trusted Us"
 msgstr ""
 
 #: patterns/stats.php
@@ -2200,9 +2224,19 @@ msgctxt "Style variation name"
 msgid "Accordion step"
 msgstr ""
 
+#: styles/blocks/group-arrow-lead.json
+msgctxt "Style variation name"
+msgid "Arrow lead"
+msgstr ""
+
 #: styles/blocks/group-catalog-toolbar.json
 msgctxt "Style variation name"
 msgid "Catalog toolbar"
+msgstr ""
+
+#: styles/blocks/group-hero-collage.json
+msgctxt "Style variation name"
+msgid "Hero collage"
 msgstr ""
 
 #: styles/blocks/group-hero-grid.json

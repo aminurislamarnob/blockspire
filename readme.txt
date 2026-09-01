@@ -124,9 +124,9 @@ Source: https://fonts.google.com/specimen/Poppins
 Service icons, decorative graphics, the five star rating mask and the arrow icons
 embedded as data URIs in styles/blocks/button-arrow.json,
 button-outline-arrow.json, button-chip.json, read-more-arrow.json,
-paragraph-rating.json, group-newsletter-underline.json and
-group-newsletter-boxed.json
-(assets/images/icon-*.svg, band-decoration.svg, dot-grid.svg)
+paragraph-rating.json, group-arrow-lead.json, group-newsletter-underline.json
+and group-newsletter-boxed.json
+(assets/images/icon-*.svg, band-decoration.svg, dot-grid.svg, doodle-arrow.svg)
 Copyright 2026 Aminur Islam Arnob
 License: GNU General Public License v2.0 or later
 Original work created for this theme.

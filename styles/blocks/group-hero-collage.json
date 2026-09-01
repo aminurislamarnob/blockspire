@@ -1,0 +1,10 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"title": "Hero collage",
+	"slug": "hero-collage",
+	"version": 3,
+	"blockTypes": [ "core/group" ],
+	"styles": {
+		"css": "&{position:relative;padding-block-end:18%}\n& > .blockspire-collage-photo{inline-size:64%;margin-block:10% 0;margin-inline:16% auto}\n& > .blockspire-collage-stat{position:absolute;inset-block-start:0;inset-inline-end:0;inline-size:36%}\n& > .blockspire-collage-note{position:absolute;inset-block-end:0;inset-inline-start:0;inline-size:38%}\n& > .blockspire-collage-play{position:absolute;inset-block-end:6%;inset-inline-start:44%}\n& > .blockspire-collage-doodle{position:absolute;inset-block-start:36%;inset-inline-start:2%;inline-size:10%;margin:0}"
+	}
+}
