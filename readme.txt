@@ -108,6 +108,13 @@ drop your form plugin's block in its place; the panel styling stays.
 
 Go to Appearance > Editor > Styles. Pick a style variation, or open the styles panel to adjust colours and typography yourself.
 
+= Is the testimonial section a slider? =
+
+Yes. The client stories pattern is a strip that scrolls sideways and snaps one
+page of quotes at a time — swipe on a phone, scroll on a trackpad, or use the
+page dots underneath. The dots are added by the theme's script; without
+JavaScript the strip still scrolls and snaps on its own.
+
 == Copyright ==
 
 Blockspire WordPress theme, Copyright 2026 Aminur Islam Arnob

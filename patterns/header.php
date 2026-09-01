@@ -21,10 +21,14 @@
 
 <!-- wp:navigation {"textColor":"link-color","overlayBackgroundColor":"main-bg","overlayTextColor":"link-color","style":{"spacing":{"blockGap":"var:preset|spacing|32"}},"fontSize":"button-large"} /-->
 
-<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
-<div class="wp-block-group">
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|20"}},"textColor":"link-color","layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
+<div class="wp-block-group has-link-color-color has-text-color">
 <?php if ( class_exists( 'WooCommerce' ) ) : ?>
-<!-- wp:woocommerce/mini-cart {"hasHiddenPrice":true,"fontSize":"button-large"} /-->
+<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|8"}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
+<div class="wp-block-group"><!-- wp:woocommerce/customer-account {"displayStyle":"icon_only","iconStyle":"line","iconClass":"wc-block-customer-account__account-icon","fontSize":"button-large"} /-->
+
+<!-- wp:woocommerce/mini-cart {"hasHiddenPrice":true,"fontSize":"button-large"} /--></div>
+<!-- /wp:group -->
 <?php endif; ?>
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"className":"is-style-rounded"} -->
