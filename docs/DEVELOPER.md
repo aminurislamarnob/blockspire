@@ -96,6 +96,7 @@ Dev-only files excluded from the shipped zip (see `tools/build-zip.sh`): `tools/
 `theme.json` (schema v3) is the **single source of truth**. Templates, patterns and `functions.php`
 consume it and never duplicate a value. Core's default palette, gradients, duotones and default
 font/spacing sizes are disabled, so editors only ever see the theme's own presets.
+For a key-by-key walkthrough of the entire file, see `docs/THEME-JSON.md`.
 
 Presets are referenced in CSS as `var(--wp--preset--<type>--<slug>)` and in block attributes as
 `var:preset|<type>|<slug>`.
